@@ -1,0 +1,92 @@
+.boutiquesInfo {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-bottom: 50px;
+}
+
+.boxe2titre {
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.boxe2icone {
+    font: "Arial", "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 4px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.boxe2icone img {
+    max-width: 90px;
+    max-height: 90px;
+    margin-bottom: 1px;
+}
+
+.boxe2icone p {
+    color: white;
+}
+
+.boxe2icone:hover {
+    background-color: red;
+    color: #ff0000;
+    transform:translateY(-15px);
+}
+
+.boxe2titre {
+    margin-left: 200px;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.boxe2titre h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+    margin-bottom: -60px;
+}
+
+.boxe2titre2 {
+    color: transparent;
+    -webkit-text-stroke: 3px white; 
+    letter-spacing: 2px;
+}
+
+
+.boxe2boutonTexte {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    left: 1200px;
+    background-color: white;
+    margin-bottom: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    color : red;
+    transition: 0.4s;
+}
+
+.boxe2boutonTexte:hover {
+    transform: scale(1.05);
+}
+
+.boxe2paragraphe {
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
