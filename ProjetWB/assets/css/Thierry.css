@@ -1,95 +1,95 @@
 /*--------------- début BOXE 2 ---------------*/
 
-.boutiquesInfo {
-    display: flex;
-    justify-content: center;
-    gap:50px;
-    margin-bottom: 50px;
+.boutiquesInfo {                /* Conteneur de la boxe 2 */
+    display: flex;              /* Flexbox */
+    justify-content: center;    /* Centrage horizontal */
+    gap:50px;                   /* Espacement entre les éléments */
+    margin-bottom: 50px;        /* Marge basse */
 }
 
-.boxe2titre {
-    margin-bottom: 20px;
-    margin-left: 300px;
+.boxe2titre {                   /* Titre de la boxe 2 */
+    margin-bottom: 20px;        /* Marge basse */
+    margin-left: 300px;         /* Marge gauche */
 }
 
-.boxe2icone {
-    font: "Arial", "Fira Sans", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 4px solid white;
-    border-radius: 8px;
-    padding: 10px;
-    width: 180px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: 0.4s;
+.boxe2icone {                       /* Conteneur de l'icône */
+    font: "Arial", "Fira Sans", sans-serif;   /* Police */
+    font-weight: 500;               /* Poids de la police */
+    font-size: 18px;                /* Taille de la police */
+    background-color: rgba(0, 0, 0, 0.4);   /* Couleur de fond */
+    border: 4px solid white;      /* Bordure */
+    border-radius: 8px;             /* Rayon de la bordure */
+    padding: 10px;                  /* Remplissage */
+    width: 180px;                   /* Largeur */
+    height: 180px;                  /* Hauteur */
+    display: flex;                  /* Flexbox est un conteneur flexible qui permet d'aligner et de distribuer l'espace entre les éléments d'un composant */ 
+    flex-direction: column;         /* Direction de la flexbox permet de placer le nom en bas des icones */
+    align-items: center;            /* Alignement vertical */
+    justify-content: center;        /* Alignement horizontal */
+    text-align: center;             /* Alignement du texte */
+    transition: 0.4s;               /* Durée de la transition */
 }
 
-.boxe2icone img {
-    max-width: 90px;
-    max-height: 90px;
-    margin-bottom: 1px;
+.boxe2icone img {                   /* Images de la boxe 2 */
+    max-width: 90px;                /* Largeur maximale */
+    max-height: 90px;               /* Hauteur maximale */
+    margin-bottom: 1px;             /* Marge basse */
 }
 
-.boxe2icone p {
-    color: white;
+.boxe2icone p {                     /* Nom des icones afficher de la boxe 2 */
+    color: white;                 /* Couleur du texte */
 }
 
-.boxe2icone:hover {
-    background-color: red;
-    color: #ff0000;
-    transform:translateY(-15px);
+.boxe2icone:hover {                 /* Effet au survol des icones lorsqu'on place notre curseur sur l'icone */
+    background-color: red;        /* Couleur de fond */
+    color: #ff0000;               /* Couleur du texte */
+    transform:translateY(-15px);    /* Translation */
 }
 
-.boxe2titre {
-    margin-left: 200px;
-    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+.boxe2titre {                       /* Titre de la boxe 2 */
+    margin-left: 200px;             /* Marge gauche */
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
 }
 
-.boxe2titre h2 {
-    font-weight: bold;
-    color: white;
-    font-size: 64px;
-    margin-bottom: -60px;
+.boxe2titre h2 {                    /* Titre de la boxe 2 */
+    font-weight: bold;              /* Poids de la police */
+    color: white;                 /* Couleur du texte */
+    font-size: 64px;                /* Taille de la police */
+    margin-bottom: -60px;           /* Marge basse */
 }
 
-.boxe2titre2 {
-    color: transparent;
-    -webkit-text-stroke: 3px white; 
-    letter-spacing: 2px;
+.boxe2titre2 {                      /* Titre de la boxe 2 */
+    color: transparent;             /* Couleur du texte */
+    -webkit-text-stroke: 3px white;     /* Contour du texte */
+    letter-spacing: 2px;            /* Espacement des lettres */
 }
 
 
-.boxe2boutonTexte {
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    text-align: center;
-    background-color: white;
-    color : red;
-    padding: 10px;
-    left: 70%;
-    margin-bottom: 80px;
-    border-radius: 10px;
-    width: 230px;
-    transition: 0.4s;
+.boxe2boutonTexte {                 /* Bouton de la boxe 2 */
+    font-weight: bold;              /* Poids de la police */
+    font-size: 18px;                /* Taille de la police */
+    position: relative;             /* Position relative */
+    text-align: center;             /* Alignement du texte */
+    background-color: white;      /* Couleur de fond */
+    color : red;                  /* Couleur du texte */
+    padding: 10px;                  /* Remplissage */
+    left: 70%;                      /* Position à gauche */
+    margin-bottom: 80px;            /* Marge basse */
+    border-radius: 10px;            /* Rayon de la bordure */
+    width: 230px;                   /* Largeur */
+    transition: 0.4s;               /* Durée de la transition */
 }
 
-.boxe2boutonTexte:hover {
-    transform: scale(1.05);
+.boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
+    transform: scale(1.05);         /* Transformation */
 }
 
-.boxe2paragraphe {
-    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    font-size: 26px;
-    text-align: center;
-    color: white;
-    margin-bottom: 100px;
+.boxe2paragraphe {                  /* Paragraphe de la boxe 2 */ 
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
+    font-size: 26px;                /* Taille de la police */
+    text-align: center;             /* Alignement du texte */
+    color: white;                 /* Couleur du texte */
+    margin-bottom: 100px;           /* Marge basse */
 }
 
 /*--------------- fin BOXE 2 ---------------*/
@@ -99,74 +99,75 @@
 
 /*--------------- début ENMODETIPS ---------------*/
 
-.enModeTips {
-    height: 400px;
-    width: 70%;
-    position: relative;
-    left:50%;
-    transform: translateX(-50%);
-    background-color: rgb(255, 230, 0);
-    border-radius: 10px;
-    margin-bottom: 200px;
+.enModeTips {                       /* Conteneur du #enModeTips */
+    height: 400px;                  /* Hauteur */
+    width: 70%;                     /* Largeur */
+    position: relative;             /* Position relative */
+    left:50%;                       /* Position à gauche */
+    transform: translateX(-50%);    /* Translation */
+    background-color: rgb(255, 230, 0);  /* Couleur de fond */
+    border-radius: 10px;            /* Rayon de la bordure */
+    margin-bottom: 200px;           /* Marge basse */
 }
 
-.enModeTipsTitre {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    color: white;
+.enModeTipsTitre {                  /* Titre de #enModeTips */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
+    font-style: italic;             /* Style de la police */
+    font-weight: bold;              /* Poids de la police */
+    color: white;                 /* Couleur du texte */
     text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
-    font-size: 54px;
-    position: absolute;
-    top: -90px;
-    left: 5%;
+    /* bordure de texte en noir */
+    font-size: 54px;                /* Taille de la police */
+    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
+    top: -90px;                     /* Position en haut */
+    left: 5%;                       /* Position à gauche */
 }
 
-.infosBonsPlans {
-    color: black;
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
-    font-size: 46px;
-    font-weight: bold;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+.infosBonsPlans {                   /* titre de la boxe 2 */
+    color: black;                 /* Couleur du texte */
+    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
+    left: 50%;                      /* Position à gauche */
+    top: 5%;                        /* Position en haut */
+    transform: translateX(-50%);    /* Translation */
+    font-size: 46px;                /* Taille de la police */
+    font-weight: bold;              /* Poids de la police */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
 }
 
-.barreMail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap : 290px;
+.barreMail {                        /* Barre de mail */
+    display: flex;                  /* Flexbox */
+    justify-content: center;        /* Centrage horizontal */
+    align-items: center;            /* Alignement vertical */
+    gap : 69%;                    /* Espacement entre les éléments */
 
-    border: 3px solid black;
-    border-radius: 50px;
-    position: absolute;
-    width: 450px;
-    padding: 5px;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
+    border: 3px solid black;      /* Bordure */
+    border-radius: 50px;            /* Rayon de la bordure */
+    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
+    width: 35%;                   /* Largeur */
+    padding: 5px;                   /* Remplissage */
+    top: 40%;                       /* Position en haut */
+    left: 50%;                      /* Position à gauche */
+    transform: translateX(-50%);    /* Translation */
 }
 
-.enModeTips img {
-    max-width: 20px;
-    max-height: 20px;
-    transition: 0.4s;
+.enModeTips img {                   /* Images de la boxe 2 */
+    max-width: 20px;                /* Largeur maximale */
+    max-height: 20px;               /* Hauteur maximale */
+    transition: 0.4s;               /* Durée de la transition */
 }
 
-.enModeTips img:hover {
-    transform: translateX(10px);
+.enModeTips img:hover {             /* Effet au survol des icones lorsqu'on place notre curseur sur l'icone */
+    transform: translateX(10px);    /* Translation */
 }
 
-.tipsTexte {
-    width: 80%;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    font-size: 18px;
-    color: black;
-    position: absolute;
-    top: 69%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.tipsTexte {                        /* Texte du conteneur enModeTips */
+    width: 80%;                     /* Largeur */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
+    font-size: 18px;                /* Taille de la police */
+    color: black;                 /* Couleur du texte */
+    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
+    top: 69%;                       /* Position en haut */
+    left: 50%;                      /* Position à gauche */
+    transform: translate(-50%, -50%);   /* Translation */
+    text-align: center;             /* Alignement du texte */
 }
