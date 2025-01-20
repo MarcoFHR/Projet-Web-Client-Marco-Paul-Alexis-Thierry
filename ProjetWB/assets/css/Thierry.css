@@ -87,7 +87,9 @@
 .boxe2paragraphe {                  /* Paragraphe de la boxe 2 */ 
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
     font-size: 26px;                /* Taille de la police */
-    text-align: center;             /* Alignement du texte */
+    max-width: 58%;                 /* Largeur maximale */
+    text-align: center;             /* Alignement du texte au centre */
+    margin: 0 auto;                 /* Centrage horizontal */
     color: white;                 /* Couleur du texte */
     margin-bottom: 100px;           /* Marge basse */
 }
@@ -99,14 +101,17 @@
 
 /*--------------- début ENMODETIPS ---------------*/
 
-.enModeTips {                       /* Conteneur du #enModeTips */
-    height: 400px;                  /* Hauteur */
-    width: 70%;                     /* Largeur */
+.enModeTips {                       /* Conteneur du #enModeTips rectangle jaune */
+    min-height: 400px;              /* Hauteur minimale */
+    width: 90%;                     /* Largeur */
+    max-width: 1200px;              /* Largeur maximale */
+    padding: 20px;                  /* Remplissage */
+    box-sizing: border-box;         /* Inclure le padding et la bordure dans la largeur totale */
     position: relative;             /* Position relative */
     left:50%;                       /* Position à gauche */
     transform: translateX(-50%);    /* Translation */
     background-color: rgb(255, 230, 0);  /* Couleur de fond */
-    border-radius: 10px;            /* Rayon de la bordure */
+    border-radius: 20px;            /* Rayon de la bordure */
     margin-bottom: 200px;           /* Marge basse */
 }
 
@@ -123,12 +128,16 @@
     left: 5%;                       /* Position à gauche */
 }
 
+.infosBonsPlansContainer {          /* Conteneur on souhaite afficher les éléments de enModeTips sous forme de ligne */
+    display: flex;                  /* Flexbox pour aligner les éléments sur une ligne */
+    flex-direction: column;         /* Direction verticale */
+    align-items: center;            /* Alignement au centre */
+    gap: 20px;                      /* Espacement entre les éléments */
+}
+
 .infosBonsPlans {                   /* titre de la boxe 2 */
     color: black;                 /* Couleur du texte */
-    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
-    left: 50%;                      /* Position à gauche */
-    top: 5%;                        /* Position en haut */
-    transform: translateX(-50%);    /* Translation */
+    text-align: center;             /* Alignement du texte */
     font-size: 46px;                /* Taille de la police */
     font-weight: bold;              /* Poids de la police */
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
@@ -138,19 +147,17 @@
     display: flex;                  /* Flexbox */
     justify-content: center;        /* Centrage horizontal */
     align-items: center;            /* Alignement vertical */
-    gap : 69%;                    /* Espacement entre les éléments */
-
+    gap: 250px;                     /* Espacement entre les éléments */
+    white-space: nowrap;            /* Empêche le retour à la ligne */
     border: 3px solid black;      /* Bordure */
     border-radius: 50px;            /* Rayon de la bordure */
-    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
-    width: 35%;                   /* Largeur */
+    width: 400px;                   /* Largeur */
     padding: 5px;                   /* Remplissage */
-    top: 40%;                       /* Position en haut */
-    left: 50%;                      /* Position à gauche */
-    transform: translateX(-50%);    /* Translation */
+    transform: translateY(-28%);    /* Translation */
 }
 
-.enModeTips img {                   /* Images de la boxe 2 */
+
+.enModeTips img {                   /* Images de la flèche dans la barre mail */
     max-width: 20px;                /* Largeur maximale */
     max-height: 20px;               /* Hauteur maximale */
     transition: 0.4s;               /* Durée de la transition */
@@ -161,13 +168,10 @@
 }
 
 .tipsTexte {                        /* Texte du conteneur enModeTips */
-    width: 80%;                     /* Largeur */
+    width: 90%;                     /* Largeur */
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
     font-size: 18px;                /* Taille de la police */
     color: black;                 /* Couleur du texte */
-    position: absolute;             /* Position absolue rataché à enModeTips permet de positionner le titre par rapport à son conteneur */
-    top: 69%;                       /* Position en haut */
-    left: 50%;                      /* Position à gauche */
-    transform: translate(-50%, -50%);   /* Translation */
     text-align: center;             /* Alignement du texte */
+    margin-bottom: 10px;
 }
