@@ -5,7 +5,7 @@ body{
   background-size: 100% 100%;
 }
 #foot{
-  background-color: white;
+  background: linear-gradient(to right, #fc6a03, #a33ce2, #6a0dad);
   color: black;
   display: flex; /* alignement horizontal */
   justify-content: space-around; /* espace distribué égal */
