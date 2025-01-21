@@ -1,5 +1,10 @@
 /*--------------- début BOXE 2 ---------------*/
 
+.boxe2 {
+    margin: 0;
+    padding: 0;
+}
+
 .boutiquesInfo {                /* Conteneur de la boxe 2 */
     display: flex;              /* Flexbox */
     justify-content: center;    /* Centrage horizontal */
@@ -116,7 +121,6 @@
     transform: translateX(-50%);    /* Translation */
     background-color: rgb(255, 230, 0);  /* Couleur de fond */
     border-radius: 20px;            /* Rayon de la bordure */
-    margin-bottom: 200px;           /* Marge basse */
 }
 
 .enModeTipsTitre {                  /* Titre de #enModeTips */
@@ -181,6 +185,13 @@
 }
 
 
+/* --------------- fin ENMODETIPS ---------------*/
+
+
+
+
+/* --------------- début MEDIA QUERIES ---------------*/
+
 @media (max-width: 1024px) {
 
     .boxe2titre {
@@ -240,3 +251,36 @@
         font-size: 16px;            /* Réduire la taille de la police */
     }
 }
+
+/* --------------- fin MEDIA QUERIES ---------------*/
+
+
+
+
+/* --------------- début BANNIERE ---------------*/
+
+.arrièrePlanRouge {
+    position: relative;             /* Position relative */
+    bottom: 200px;
+    width: 100%;                    /* Largeur */
+    height: 600px;                  /* Hauteur */
+    background-color: red;        /* Couleur de fond */
+    z-index: -1;                    /* Positionner derrière les autres div */
+}
+
+.bannière {
+    display: flex;                  /* Flexbox */
+    justify-content: space-evenly;  /* Centrage horizontal */
+    align-items: end;            /* Alignement vertical */
+    height: 580px;                  /* Hauteur */
+    position: absolute;             /* Position absolue */
+}
+
+.iconeMagasin {
+    transform: translate(-50%, -50%);   /* Translation */
+    width: 250px;               /* Largeur maximale */
+    height: 200px;              /* Hauteur maximale */
+    padding: 10px;                  /* Remplissage */
+    background-color: white;      /* Couleur de fond */
+}
+
