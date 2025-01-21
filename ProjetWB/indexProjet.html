@@ -6,7 +6,7 @@
     <title>Projet Web-Client Marco, Paul-Alexis, Thierry</title>
     <meta name="description" content="" >
     <link rel="stylesheet" href="assets/css/Marco.css" media="all">
-    <link rel="stylesheet" href="assets/css/Thierry.css">
+    <link rel="stylesheet" href="assets/css/Thierry.css" media="all">
 </head>
 <body>
 <!--
@@ -40,36 +40,25 @@
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
-<div id="fixedHead">
-  <div></div>
-  <div>Boutiques & Restaurants</div>
-  <div>Actus & Bons plans</div>
-  <div>Infos pratiques</div>
-  <div style="border: solid yellow; border-radius: 10px; background-color: yellow;">OUVERT - 9:30 à 19:30</div>
-  <div></div>
-</div>
+    <div id="fixedHead">
+    <div></div>
+    <div>Boutiques & Restaurants</div>
+    <div>Actus & Bons plans</div>
+    <div>Infos pratiques</div>
+    <div style="border: solid yellow; border-radius: 10px; background-color: yellow;">OUVERT - 9:30 à 19:30</div>
+    <div></div>
+    </div>
 
 
 
-<div id="fixedPartagerLeft">
-  <div style="transform: rotate(180deg);"><a>#enmodepartage</a></div>
-  <div id="fixedTwitter"><img src="assets/images/twitter.png"></div>
-  <div id="fixedFacebook"><img src="assets/images/facebook.png"></div>
-</div>
+    <div id="fixedPartagerLeft">
+    <div style="transform: rotate(180deg);"><a>#enmodepartage</a></div>
+    <div id="fixedTwitter"><img src="assets/images/twitter.png"></div>
+    <div id="fixedFacebook"><img src="assets/images/facebook.png"></div>
+    </div>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 
 <!-- ------------------------------------------------------>
@@ -113,76 +102,94 @@
 
             <!--***************************** DEBUT PARTIE DE THIERRY *****************************-->
 
+    <div class="scroll-tracker"></div>
 
 
-
-    <!-- ------------------------------------------------------>
-    <!-- ----------------- BOXES 2 -------------------->    <!-- on créer une div pour les boxes 2 -->
-    <!-- ------------------------------------------------------>
-    
-<div class="boxe2">   <!-- on créer une div mère pour les boxes 2 -->
-
-
-    <div class="boxe2titre">    <!-- on créer une div pour le titre -->
-        <h2>Une envie de shopping<br><span class="boxe2titre2">particulière ?</span></h2>   <!-- on ajoute le titre -->
-        <p class="boxe2boutonTexte">Toutes les boutiques</p>    <!-- on ajoute le texte du bouton -->
-    </div>
-
-
-    <div class="boutiquesInfo">   <!-- on créer une div mère pour les boutiques -->
-        <div class="boxe2icone">    <!-- on créer une div pour les icônes -->
-            <img src="assets/images/Boxe2/fauteuil.png" alt="Objets trouvés">   <!-- on ajoute une image -->
-            <p>Maison</p>   <!-- on ajoute le nom de l'icone -->
-        </div>
-        <div class="boxe2icone">
-            <img src="assets/images/Boxe2/restaurant.png" alt="Accès">
-            <p>Restauration</p>
-        </div>
-        <div class="boxe2icone">
-            <img src="assets/images/Boxe2/mode.png" alt="Plan du centre">
-            <p>Mode & Bijoux</p>
-        </div>
-        <div class="boxe2icone">
-            <img src="assets/images/Boxe2/beauté.png" alt="Accessibilité">
-            <p>Beauté & Santé</p>
-        </div>
-        <div class="boxe2icone">
-            <img src="assets/images/Boxe2/livre.png" alt="Plus de services">
-            <p>Culture & Loisirs</p>
-        </div>
-    </div>
-
-
-    <div class="boxe2paragraphe">   <!-- on créer une div pour le paragraphe -->
-        <p><span style="font-weight: bold;">Plus de 40 boutiques</span> 
-            de mode, beauté et déco pour dénicher
-            les dernières tendances et se faire
-            plaisirs ensemble.
-        </p>    <!-- on ajoute le texte -->
-    </div>
-
-
-    <div class="enModeTips">    <!-- on créer une div mère pour le #enModeTips -->
-        <p class="enModeTipsTitre">#enmodetips</p>  <!-- on ajoute le titre -->
+        <!-- ------------------------------------------------------>
+        <!-- ----------------- BOXES 2 -------------------->    <!-- on créer une div pour les boxes 2 -->
+        <!-- ------------------------------------------------------>
         
-        <div class="infosBonsPlansContainer">   <!-- on créer une div pour les infos et les bons plans pour les organiser verticalement -->
-            <p class="infosBonsPlans">Infos & Bons plans</p>  <!-- on ajoute le titre -->
-        
-            <div class="barreMail">  <!-- on créer une div pour la barre mail -->
-                <p class="votreEmail">Votre email</p>   <!-- on ajoute le texte -->
-                <img src="assets/images/Boxe2/fleche.png" alt="fleche"> <!-- on ajoute une image de flèche -->
+
+    <div class="boxe2">   <!-- on créer une div mère pour les boxes 2 -->
+
+
+        <div class="boxe2titre">    <!-- on créer une div pour le titre -->
+            <h2>Une envie de shopping<br><span class="boxe2titre2">particulière ?</span></h2>   <!-- on ajoute le titre -->
+            <p class="boxe2boutonTexte">Toutes les boutiques</p>    <!-- on ajoute le texte du bouton -->
+        </div>
+
+
+        <div class="boutiquesInfo">   <!-- on créer une div mère pour les boutiques -->
+            <div class="boxe2icone">    <!-- on créer une div pour les icônes -->
+                <img src="assets/images/Boxe2/fauteuil.png" alt="Objets trouvés">   <!-- on ajoute une image -->
+                <p>Maison</p>   <!-- on ajoute le nom de l'icone -->
             </div>
-        
-            <p class="tipsTexte">   <!-- on ajoute le texte -->
-                En renseignant votre adresse e-mail, vous acceptez de recevoir des informations de la part
-                des enseignes et vous prenez connaissance de notre Politique de confidentialité.
-            </p>
+            <div class="boxe2icone">
+                <img src="assets/images/Boxe2/restaurant.png" alt="Accès">
+                <p>Restauration</p>
+            </div>
+            <div class="boxe2icone">
+                <img src="assets/images/Boxe2/mode.png" alt="Plan du centre">
+                <p>Mode & Bijoux</p>
+            </div>
+            <div class="boxe2icone">
+                <img src="assets/images/Boxe2/beauté.png" alt="Accessibilité">
+                <p>Beauté & Santé</p>
+            </div>
+            <div class="boxe2icone">
+                <img src="assets/images/Boxe2/livre.png" alt="Plus de services">
+                <p>Culture & Loisirs</p>
+            </div>
+        </div>
+
+
+        <div class="boxe2paragraphe">   <!-- on créer une div pour le paragraphe -->
+            <p><span style="font-weight: bold;">Plus de 40 boutiques</span> 
+                de mode, beauté et déco pour dénicher
+                les dernières tendances et se faire
+                plaisirs ensemble.
+            </p>    <!-- on ajoute le texte -->
+        </div>
+
+
+        <div class="enModeTips">    <!-- on créer une div mère pour le #enModeTips -->
+            <p class="enModeTipsTitre">#enmodetips</p>  <!-- on ajoute le titre -->
+            
+            <div class="infosBonsPlansContainer">   <!-- on créer une div pour les infos et les bons plans pour les organiser verticalement -->
+                <p class="infosBonsPlans">Infos & Bons plans</p>  <!-- on ajoute le titre -->
+            
+                <div class="barreMail">  <!-- on créer une div pour la barre mail -->
+                    <p class="votreEmail">Votre email</p>   <!-- on ajoute le texte -->
+                    <img src="assets/images/Boxe2/fleche.png" alt="fleche"> <!-- on ajoute une image de flèche -->
+                </div>
+            
+                <p class="tipsTexte">   <!-- on ajoute le texte -->
+                    En renseignant votre adresse e-mail, vous acceptez de recevoir des informations de la part
+                    des enseignes et vous prenez connaissance de notre Politique de confidentialité.
+                </p>
+            </div>
+
         </div>
 
     </div>
+
+
+    <!-- ------------------------------------------------------>
+    <!-- --------------- END BOXES 2 ------------------>
+    <!-- ------------------------------------------------------>
+
+
+
+    <!-- ------------------------------------------------------>
+    <!-- ----------------- début BANNIÈRE -------------------->    <!-- on créer une div pour la bannière, les magasins -->
+    <!-- ------------------------------------------------------>
+
 
     <div class="arrièrePlanRouge">   <!-- on créer une div pour l'arrière plan rouge -->
-        <p class="bannière">
+        
+        <img class="scrollBouton" src="assets/images/Boxe2/precedent.png" id="previous">   <!-- on ajoute une image de bannière -->
+        
+        <div class="bannière">
             <img class="iconeMagasin" src="assets/images/Boxe2/pharmacie.png" alt="pharmacie">
             <img class="iconeMagasin" src="assets/images/Boxe2/hopital.png" alt="Hopital">
             <img class="iconeMagasin" src="assets/images/Boxe2/bruitCuisine.png" alt="bruitCuisine">
@@ -216,16 +223,19 @@
             <img class="iconeMagasin" src="assets/images/Boxe2/google.png" alt="Google">
             <img class="iconeMagasin" src="assets/images/Boxe2/小米.png" alt="小米">
             <img class="iconeMagasin" src="assets/images/Boxe2/Tencent.png" alt="Tencent">
-        </p>
+        </div>
+        
+        <img class="scrollBouton" src="assets/images/Boxe2/suivant.png" id="next" />   <!-- on ajoute une image de bannière -->
+        
     </div>
 
-
-</div>
-
-
+    <script src="assets/js/Thierry.js"></script>
+        
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- ------------------------------------------------------>
-    <!-- --------------- END BOXES 2 ------------------>
+    <!-- ----------------- fin BANNIÈRE -------------------->    <!-- on créer une div pour la bannière, les magasins -->
     <!-- ------------------------------------------------------>
 
 

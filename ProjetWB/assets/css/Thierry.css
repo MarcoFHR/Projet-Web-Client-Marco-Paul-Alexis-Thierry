@@ -1,24 +1,64 @@
+/* --------------- début ANIMATION SCROLL ---------------*/
+
+@keyframes appear {     /* Animation d'apparition apparaitre de 0% à 100% lorsqu'on scroll */
+    from {              
+        opacity: 0;     /* Opacité à 0 */
+        scale: 0.5;     /* Taille à 0.5 */
+    }
+    to {
+        opacity: 1;     /* Opacité à 1 */
+        scale: 1;       /* Taille à 1 */
+    }
+}
+
+/* --------------- fin ANIMATION SCROLL ---------------*/
+
+
+
+
+/* --------------- début SCROLL TRACKER ---------------*/
+
+.scroll-tracker {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 0.5rem;
+    background-color: var(--clr-primary-400);
+    z-index: 1001;
+}
+
+/* --------------- fin SCROLL TRACKER ---------------*/
+
+
+
+
 /*--------------- début BOXE 2 ---------------*/
 
 .boxe2 {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .boutiquesInfo {                /* Conteneur de la boxe 2 */
     display: flex;              /* Flexbox */
     justify-content: center;    /* Centrage horizontal */
-    min-height: 400px;          /* Hauteur minimale */
+    min-height: 300px;          /* Hauteur minimale */
     gap: 50px;
     flex-wrap: wrap;            /* Permet de passer à la ligne lorsque la largeur de l'écran est trop petite */
     padding-left: 100px;        /* Espace à gauche pour pas superposer avec le #enmodepartage*/
     padding-right: 100px;       /* Espace à droite pour équilibrer le padding gauche */
-    margin-bottom: 50px;        /* Marge basse */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
 .boxe2titre {                   /* Titre de la boxe 2 */
     margin-bottom: 20px;        /* Marge basse */
     margin-left: 300px;         /* Marge gauche */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
 .boxe2icone {                       /* Conteneur de l'icône */
@@ -101,6 +141,10 @@
     margin: 0 auto;                 /* Centrage horizontal */
     color: white;                 /* Couleur du texte */
     margin-bottom: 100px;           /* Marge basse */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
 /*--------------- fin BOXE 2 ---------------*/
@@ -121,7 +165,13 @@
     transform: translateX(-50%);    /* Translation */
     background-color: rgb(255, 230, 0);  /* Couleur de fond */
     border-radius: 20px;            /* Rayon de la bordure */
-}
+
+    @media (min-width: 1440px) {    /* Pour les écrans de 1440px de largeur et plus sinon problème*/
+        animation: appear linear;       /* Animation d'apparition */
+        animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+        animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
+    }
+ }
 
 .enModeTipsTitre {                  /* Titre de #enModeTips */
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
@@ -260,27 +310,59 @@
 /* --------------- début BANNIERE ---------------*/
 
 .arrièrePlanRouge {
-    position: relative;             /* Position relative */
-    bottom: 200px;
-    width: 100%;                    /* Largeur */
+    position: relative;             /* Position absolue pour être positionné par rapport à la fenêtre */
+    left: 0;                        /* Aligne à gauche */
+    right: 0;                       /* Aligne à droite */
+    margin-top: -200px;             /* Marge négative pour superposer avec la bannière */
+    width: 100%;                    /* Largeur totale */
     height: 600px;                  /* Hauteur */
+    
     background-color: red;        /* Couleur de fond */
-    z-index: -1;                    /* Positionner derrière les autres div */
+
+    display: flex;                  /* Flexbox */
+    justify-content: center;        /* Centrage horizontal */
+    align-items: center;            /* Alignement vertical */
+    gap: 63rem;                     /* Espacement entre les éléments */
+}
+
+.arrièrePlanRouge img {
+    margin-top: 175px;
+}
+
+.scrollBouton {
+    width: 75px;                   /* Largeur */
+    height: 75px;                  /* Hauteur */;
+    cursor: pointer;               /* Curseur pour indiquer que l'on peut cliquer */
 }
 
 .bannière {
     display: flex;                  /* Flexbox */
     justify-content: space-evenly;  /* Centrage horizontal */
-    align-items: end;            /* Alignement vertical */
-    height: 580px;                  /* Hauteur */
+    align-items: center;            /* Alignement vertical */
     position: absolute;             /* Position absolue */
+    gap: 25px;                      /* Espacement entre les éléments */
+    padding: 1rem;                  /* Remplissage rem = 16px */
+    max-width: 950px;               /* Largeur maximale */
+
+    /*outline: 3px solid black;      /* Bordure */
+
+    overflow-x: scroll;             /* Défilement horizontal */
+}
+
+.bannière::-webkit-scrollbar {      /* Barre de défilement */
+    display: none;                  /* Cacher la barre de défilement */
 }
 
 .iconeMagasin {
-    transform: translate(-50%, -50%);   /* Translation */
-    width: 250px;               /* Largeur maximale */
-    height: 200px;              /* Hauteur maximale */
+    width: 150px;                   /* Largeur maximale */
+    height: 150px;                  /* Hauteur maximale */
     padding: 10px;                  /* Remplissage */
     background-color: white;      /* Couleur de fond */
+    object-fit: contain;            /* Adapter l'image à l'intérieur du carré sans l'étirer */
+    flex: none;
+    transition: 0.4s;               /* Transition pour l'effet de survol */
 }
 
+.iconeMagasin:hover {
+    transform: scale(1.1);          /* Agrandir l'image au survol */
+}
