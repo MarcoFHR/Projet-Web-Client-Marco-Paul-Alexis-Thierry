@@ -310,7 +310,7 @@
 /* --------------- début BANNIERE ---------------*/
 
 .arrièrePlanRouge {
-    position: relative;             /* Position absolue pour être positionné par rapport à la fenêtre */
+    position: absolute;             /* Position absolue pour être positionné par rapport à la fenêtre */
     left: 0;                        /* Aligne à gauche */
     right: 0;                       /* Aligne à droite */
     margin-top: -200px;             /* Marge négative pour superposer avec la bannière */
@@ -333,6 +333,11 @@
     width: 75px;                   /* Largeur */
     height: 75px;                  /* Hauteur */;
     cursor: pointer;               /* Curseur pour indiquer que l'on peut cliquer */
+    transition: transform 0.2s ease;
+}
+
+.scrollBouton:active {
+    transform: scale(0.80);          /* Agrandir l'image au clic */
 }
 
 .bannière {
