@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f01c24; /* Fond rouge vif */
+    color: white; /* Texte en blanc */
+}
+
+.accueil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accueil img {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    border-radius: 2%;
+}
+
+.image1accueil {
+    margin-left: 2rem;
+    width: 48%;   
+    object-fit: cover;
+}
+
+.image2accueil {
+    margin-right: 2rem;
+    width: 48%;   
+    object-fit: cover;
+}
+
+.textEnSavoirPlus {
+    position: absolute;
+    top: 80%; /* Placer le texte au centre verticalement */
+    left: 58%; /* Placer le texte au centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuster pour centrer précisément */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    line-height: 0.5; /* Réduire l'espacement entre les lignes */
+}
+
+.textEnSavoirPlus h4 {
+    font-weight: bold;
+    font-size: 2rem; /* Taille du texte pour le titre */
+}
+
+.textEnSavoirPlus p {
+    font-size: 1.2rem; /* Taille du texte pour les paragraphes */
+}
+  
+.BoutonEnSavoirPlus {
+    padding: 0.8rem 1.6rem;
+    background-color: #f01c24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 0 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card {
+    background-color: transparent;
+    border: 4px solid white;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; /* Ajout d'une transition fluide */
+}
+
+.card p {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a i {
+    color: white;
+}
+
+/* Médias-queries pour les écrans plus larges */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        gap: 0.5em;
+    }
+}
+
+/* Effets au survol */
+.card:hover {
+    background-color: white;       /* Couleur de fond blanche */
+    color: black;                  /* Texte en noir */
+    transform: translateY(-15px);  /* Translation vers le haut */
+}
+
+.card:hover p {
+    color: black;                  /* Texte en noir */
+}
+
+.card:hover i {
+    color: red;                    /* Icône en rouge */
+}
+
+/***** SECTION ACTUS & BONS PLANS *****/
+.actus-bons-plans {
+    background-color: #f01c24; /* Fond rouge */
+    color: white;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.actus-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actus-header h2 {
+    margin: 0;
+    font-size: 3rem; /* Augmente la taille globale du texte */
+    line-height: 1.2;
+    text-align: left;
+}
+
+.actus-header h2 span {
+    font-weight: normal;
+    display: block; /* Place "bons plans" sur une nouvelle ligne */
+    font-size: 2.5rem; /* Taille légèrement réduite pour "bons plans" */
+    margin-top: -0.em; /* Ajoute un petit espace entre les lignes */
+    color: #f01c24; /* Rouge pour "bons plans" */
+    text-shadow: 
+        -1px -1px 0 #fff, 
+        1px -1px 0 #fff, 
+        -1px 1px 0 #fff, 
+        1px 1px 0 #fff; /* Contour blanc */
+}
+
+
+.actus-header h2 strong {
+    font-weight: bold;
+    color: #f01c24; /* Rouge pour le texte */
+    text-shadow: 
+        -1px -1px 0 #fff, /* Contour blanc en haut à gauche */
+        1px -1px 0 #fff,  /* Contour blanc en haut à droite */
+        -1px 1px 0 #fff,  /* Contour blanc en bas à gauche */
+        1px 1px 0 #fff;   /* Contour blanc en bas à droite */
+}
+
+.actus-header .btn {
+    background-color: white;
+    color: #f01c24;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    border: 2px solid white; /* Ajout d'une bordure */
+    border-radius: 15px; /* Coins arrondis */
+}
+
+
+.actus-header .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white;
+    z-index: -1; /* Place derrière le texte */
+}
+
+.actus-header .btn:hover::before {
+    background-color: #f7f7f7; /* Effet survol */
+}
+
+.actus-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.actus-slider i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.actus-slider i:hover {
+    color: #fff3f3;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.progress-bar .progress {
+    width: 25%; /* Exemple de progression (ajustez au besoin) */
+    height: 100%;
+    background-color: #fff3f3;
+    transition: width 0.3s ease;
+}
