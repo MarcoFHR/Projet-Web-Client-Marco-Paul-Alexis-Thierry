@@ -8,14 +8,40 @@
     <link rel="stylesheet" href="projetcss.css">
 </head>
 <body>
+    <section class="carousel-container">
+        <div class="carousel">
+          <section class="carousel-item">
+            <img src="image2femme1.png" alt="Image 1" class="Imagegauchecarousel">
+          </section>
+          <section class="carousel-item">
+            <img src="femmeseul2.png" alt="Image 2" class="Imagedroitecarousel">
+          </section>
+          <section class="carousel-item">
+            <img src="imagefemme5.png" alt="Image 3" class="Imagegauchecarousel">
+          </section>
+          <section class="carousel-item">
+            <img src="imagefemme3.png" alt="Image 3" class="Imagedroitecarousel">
+          </section>
+          <section class="carousel-item">
+            <img src="imagefemme4.png" alt="Image 3" class="Imagegauchecarousel">
+          </section>
+          <section class="carousel-item">
+            <img src="imagefemme6.png" alt="Image 3" class="Imagedroitecarousel">
+          </section>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+    <script src="projetjavascript.js"></script>
     <section class="accueil">
-        <img src="image2femme1.png" alt="2femmes" class="image1accueil" >
-        <img src="femmeseul2.png" alt="1femme" class="image2accueil">
+        <div class="testenmodeplaisir">
+            <p class="enmodeplaisir">#en mode plaisir</p>
+        </div> 
         <div class="textEnSavoirPlus">
             <h4>Evènement</h4>
             <p>Primark ouvrira</p>
             <p>ses portes</p>
-            <p>le 21 Fèvrier 2023</p>
+            <p class="derniertexte">le 21 Fèvrier 2023</p>
             <a href="https://www.google.com" class="BoutonEnSavoirPlus">En savoir plus</a>
         </div>      
     </section>

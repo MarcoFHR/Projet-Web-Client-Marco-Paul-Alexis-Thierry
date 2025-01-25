@@ -1,39 +1,85 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f01c24; /* Fond rouge vif */
-    color: white; /* Texte en blanc */
+    background-color: #f01c24; 
+    color: white; 
 }
-
-.accueil {
-    display: flex;
-    justify-content: space-between;
+  
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-
-.accueil img {
+  
+.carousel {
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.carousel-item {
+    min-width: 50%; /* Chaque élément occupe 50% de la largeur */
+}
+  
+.carousel-item img {
+    transform: translateX(2.1rem);
     border-radius: 2%;
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
 }
 
-.image1accueil {
-    margin-left: 2rem;
-    width: 48%;   
-    object-fit: cover;
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
-
-.image2accueil {
-    margin-right: 2rem;
-    width: 48%;   
-    object-fit: cover;
+  
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
+  
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
+}
+  
+.enmodeplaisir {
+    position: absolute;
+    top: 90%; /* Centré verticalement */
+    left: 35%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Pour ajuster parfaitement */
+    font-size: 3rem; /* Taille du texte */
+    font-weight: bold;
+    color: white; /* Couleur du texte */
+    text-shadow: 
+      -2px -2px 0 #000, 
+      2px -2px 0 #000, 
+      -2px 2px 0 #000, 
+      2px 2px 0 #000; /* Contour noir */
+}  
 
 .textEnSavoirPlus {
     position: absolute;
-    top: 80%; /* Placer le texte au centre verticalement */
-    left: 58%; /* Placer le texte au centre horizontalement */
+    top: 50%; /* Placer le texte au centre verticalement */
+    left: 70%; /* Placer le texte au centre horizontalement */
     transform: translate(-50%, -50%); /* Ajuster pour centrer précisément */
-    color: rgb(0, 0, 0); /* Couleur du texte */
+    color: white; /* Couleur du texte */
+    text-shadow: 
+      -1px -1px 0 #000, 
+      1px -1px 0 #000, 
+      -1px 1px 0 #000, 
+      1px 1px 0 #000; /* Contour noir */
     line-height: 0.5; /* Réduire l'espacement entre les lignes */
 }
 
@@ -45,7 +91,10 @@ body {
 .textEnSavoirPlus p {
     font-size: 1.2rem; /* Taille du texte pour les paragraphes */
 }
-  
+ 
+.derniertexte {
+    margin-bottom: 3rem;
+}
 .BoutonEnSavoirPlus {
     padding: 0.8rem 1.6rem;
     background-color: #f01c24;
@@ -105,6 +154,12 @@ a i {
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
         gap: 0.5em;
+    }
+
+    .textEnSavoirPlus {
+        position: absolute;
+        top: 58%; 
+        left: 58%;
     }
 }
 
