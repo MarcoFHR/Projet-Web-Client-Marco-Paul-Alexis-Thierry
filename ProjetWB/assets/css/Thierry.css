@@ -1,3 +1,81 @@
+/* --------------- début Actus & bons plans ---------------*/
+
+.carousel {
+    position: relative;
+    display: flex;                  /* Organise les cartes en ligne */
+    justify-content: flex-start;    /* Les cartes collent à gauche */
+    align-items: center;            /* Alignement vertical */
+    gap: 25px;                      /* Espacement entre les cartes */
+    padding: 2rem;                  /* Espacement intérieur */
+    overflow-x: auto;               /* Défilement horizontal activé */
+    width: 100%;                    /* La largeur visible est limitée à la page */
+    box-sizing: border-box;         /* Inclut les bordures et padding dans la largeur */
+    user-select: none;              /* Empêche la sélection de texte */
+  }
+  
+  .carousel::-webkit-scrollbar {    /* Barre de défilement */
+    display: none;                  /* Cacher la barre de défilement */
+  }
+
+  .card {
+    position: relative;
+    flex: 0 0 auto;                 /* Empêche les cartes de rétrécir */
+    width: 450px;                   /* Largeur fixe pour chaque carte */
+    height: 570px;                  /* Hauteur fixe pour chaque carte */
+    border-radius: 1rem;            /* Ajout de coins arrondis */
+  }
+
+  .cardImage {
+    -webkit-user-drag: none;
+    width: 100%;                /* L'image remplit la largeur du conteneur */
+    height: 100%;               /* L'image remplit la hauteur du conteneur */
+    object-fit:cover;           /* L'image remplit le conteneur en conservant ses proportions */
+    border-radius: 1rem;        /* Ajout de coins arrondis */
+  }
+
+  .cardOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .cardDate {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
+
+  }
+
+  .cardTitre {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    min-height: 6rem;
+    max-width: 90%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .cardHashtag {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+/* --------------- fin Actus & bons plans ---------------*/
+
+
+
+
+
 /* --------------- début ANIMATION SCROLL ---------------*/
 
 @keyframes appear {     /* Animation d'apparition apparaitre de 0% à 100% lorsqu'on scroll */
