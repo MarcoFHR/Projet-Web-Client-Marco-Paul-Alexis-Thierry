@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Accueil.css">
+</head>
+<body>
+    <section class="Accueilcarousel1-container">
+        <div class="Accueilcarousel1">
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/image2femme1.png" alt="Image 1">
+          </section>
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/femmeseul2.png" alt="Image 2">
+          </section>
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/imagefemme5.png" alt="Image 3">
+          </section>
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/imagefemme3.png" alt="Image 4">
+          </section>
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/imagefemme4.png" alt="Image 5">
+          </section>
+          <section class="Accueilcarousel1-item">
+            <img src="assets/images/accueil/imagefemme6.png" alt="Image 6">
+          </section>
+        </div>
+        <div>
+            <p class="enmodeplaisir1">#en mode plaisir</p>
+        </div>
+        <div class="textEnSavoirPlus">
+            <h4>Evènement</h4>
+            <p>Primark ouvrira</p>
+            <p>ses portes</p>
+            <p class="derniertextetextEnSavoirPlus">le 21 Fèvrier 2023</p>
+            <a href="https://www.google.com" class="BoutonEnSavoirPlus">En savoir plus</a>
+        </div>     
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+    <script src="CarouselDebutAccueil.js"></script>
+    <div class="container">
+        <section class="grid">
+            <a href="https://www.google.com" target="_blank" class="card">
+                <i class="bi bi-question-square" style="font-size: 3rem;"></i>
+                <p>Objets trouvés</p>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="card">
+                <i class="bi bi-geo-alt" style="font-size: 3rem;"></i>
+                <p>Accès</p>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="card">
+                <i class="bi bi-map" style="font-size: 3rem;"></i>
+                <p>Plan du centre</p>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="card">
+                <i class="bi bi-universal-access-circle" style="font-size: 3rem;"></i>
+                <p>Accessibilité</p>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="card">
+                <i class="bi bi-plus-circle" style="font-size: 3rem;"></i>
+                <p>Plus de services</p>
+            </a>
+        </section>
+        <section class="actus-bons-plans">
+            <div class="actus-header">
+                <h2>
+                    Actus &<br>
+                    <span><strong>bons plans</strong></span>
+                </h2>
+                <a href="https://www.google.com" class="btn">Toutes les actus & bons plans</a>
+            </div>
+        </section>        
+    </div>
+    <div class="carouselaccueil2">
+        <div class="cardcarousel2">
+        <img class="cardcarousel2Image" src="assets/images/actu/cuisine.png" alt="Card Image">
+        <div class="cardcarousel2Overlay" style="color: white;">
+            <p class="cardcarousel2Date">15/02/2023</p>
+            <p class="cardcarousel2Titre">Préparez votre visite</p>
+            <p class="cardcarousel2Hashtag">#enmode<span style="color: red;">découverte</span></p>
+        </div>
+        </div>
+        <div class="cardcarousel2">
+            <img class="cardcarousel2Image" src="assets/images/actu/primark.png" alt="Card Image">
+            <div class="cardcarousel2Overlay" style="color: rgb(97, 97, 97);">
+            <p class="cardcarousel2Date">11/02/2023</p>
+            <p class="cardcarousel2Titre">PRIMARK ouvre à nom du logo</p>
+            <p class="cardcarousel2Hashtag">#ouverture #information</p>
+        </div>
+    </div>
+    <div class="cardcarousel2">        
+        <img class="cardcarousel2Image" src="assets/images/actu/solde.png" alt="Card Image"> 
+        <div class="cardcarousel2Overlay" style="color:black">
+            <p class="cardcarousel2Date">09/01/2023</p>
+            <p class="cardcarousel2Titre">Une heure offerte</p>
+            <p class="cardcarousel2Hashtag">#enmode<span style="color: red;">soldes</span> #bonsplans</p>
+        </div>
+    </div>
+    <div class="cardcarousel2">
+        <img class="cardcarousel2Image" src="assets/images/actu/cadeau.png" alt="Card Image">
+        <div class="cardcarousel2Overlay" style="color: rgb(255, 30, 0);">
+            <p class="cardcarousel2Date">05/12/2022</p>
+            <p class="cardcarousel2Titre">Concours Facebook<br>De nombreux lots à gagner</p>
+            <p class="cardcarousel2Hashtag">#enmode<span style="color: rgb(2, 83, 206);">concours</span></p>  
+        </div>
+    </div>
+    <div class="cardcarousel2">
+        <img class="cardcarousel2Image" src="assets/images/actu/planète.png" alt="Card Image">
+        <div class="cardcarousel2Overlay" style="color: white;">
+            <p class="cardcarousel2Date">10/11/2023</p>
+            <p class="cardcarousel2Titre">Protégeons notre planète</p>
+            <p class="cardcarousel2Hashtag">#enmode<span style="color: yellow;">prévention</span></p>
+        </div>
+    </div>
+    <div class="cardcarousel2">
+        <img class="cardcarousel2Image" src="assets/images/actu/rosie.png" alt="Card Image">
+        <div class="cardcarousel2Overlay" style="color: rgb(255, 105, 130);">
+            <p class="cardcarousel2Date">23/01/2025</p>
+            <p class="cardcarousel2Titre">Rosé sera en concert en France</p>
+            <p class="cardcarousel2Hashtag" style="color: red;">#numberonegirl</p>
+        </div>
+    </div>
+    <script src="CarouselActuBP.js"></script>
+</body>
+</html>
