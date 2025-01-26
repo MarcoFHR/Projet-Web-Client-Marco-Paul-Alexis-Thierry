@@ -64,13 +64,13 @@ function dayOfTheWeekString(hcElem){
     s = "Fermé";
   }
   else if(day == 0 || day == 6){
-    s = "Ouvert - 10:30 à 23:00";
+    s = "OUVERT - 10:30 à 23:00";
   }
   else if (day < 5){
-    s = "Ouvert - 9:00 à 22:00";
+    s = "OUVERT - 9:00 à 22:00";
   }
   else{
-    s = "Ouvert - 9:00 à 23:00";
+    s = "OUVERT - 9:00 à 23:00";
   }
   return s;
 }
@@ -112,3 +112,5 @@ var hcElem = {value : ""};
 document.getElementById("blocHoraires").textContent = dayOfTheWeekString(hcElem);
 console.log(hcElem.value);
 animate(document.getElementById(hcElem.value));
+
+//document.getElementById("tester").onclick = function(){document.getElementById("foot").scrollIntoView({ behavior: "smooth" });};

@@ -39,14 +39,15 @@
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
-<div style="position: sticky; top: 0; width: 100%; z-index: 1000;">
+
+<div class="fixedHeadMain">
   <div id="fixedHead">
     <div><img src="assets/images/novaParcLogo.png" style="height: 4.5rem; width: 4.5rem;"></div>
-    <div class="gradient-hover-text">Boutiques & Restaurants</div>
-    <div>Actus & Bons plans</div>
-    <div>Infos pratiques</div>
+    <a class="gradient-hover-text" href="#">Boutiques & Restaurants</a>
+    <a class="gradient-hover-text" href="#">Actus & Bons plans</a>
+    <a class="gradient-hover-text" href="#foot">Infos pratiques</a>
     <div class="overBlocH">
-      <section id="blocHoraires">
+      <section id="blocHoraires" class="card">
 
       </section>
       <section id="horairesClick">
@@ -77,7 +78,7 @@
 
     <div id="fixedHeadSearchIcon"><img src="assets/images/fixedSearch.png"></div>
   </div>
-  <div style="background-color: black; color: white; font-size: 0.7rem; padding: 0.5rem; text-align: center; ">
+  <div class="fixedHeadAlert">
     Ouverture exceptionnelle le lundi 10 février en raison de la Saint-Valentin
   </div>
 
@@ -85,9 +86,9 @@
 
 
 <div id="fixedPartagerLeft">
-  <div style="transform: rotate(180deg);"><a>#enmodepartage</a></div>
-  <div id="fixedTwitter"><img src="assets/images/twitter.png"></div>
-  <div id="fixedFacebook"><img src="assets/images/facebook.png"></div>
+  <div style="transform: rotate(180deg);"><p>#enmodepartage</p></div>
+  <a id="fixedTwitter" href="https://www.twitter.com" target="_blank"><img src="assets/images/twitter.png"></a>
+  <a id="fixedFacebook" href="https://www.facebook.com" target="_blank"><img src="assets/images/facebook.png"></a>
 </div>
 
 
@@ -168,21 +169,21 @@
 <!-- ---------------------------------------------------------->
 
 <div id="foot" style="padding-top: 4rem; padding-bottom: 2rem;">
-  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div class="footerLeftColumn">
     <div style="transform: translateY(-2rem);">
       <img src="assets/images/novaParcLogo.png" style="height: 10rem; width: 10rem;">
     </div>
     <div>
       <div style="font-weight:bold; padding-bottom: 0.5rem;">Nova Parc</div>
-      <a>adresse</a>
+      36 av. Boötes
     </div>
     <div>
-      <div id="footerBubbles" style="font-size: 0.7rem;">
-        <img src="assets/images/phoneIcon.png" style="height: 20px; width: 20px;">
-        <a style="">+33-5-33-92-98-85</a>
+      <div id="footerBubbles">
+        <img src="assets/images/phoneIcon.png" style="height: 1.25rem;">
+        +33-5-33-92-98-85
       </div>
-      <div id="footerBubbles" style="font-size: 0.625rem;">
-        <img src="assets/images/emailIcon.jpg" style="height: 15px; width: 15px;">
+      <div id="footerBubbles">
+        <img src="assets/images/emailIcon.jpg" style="height: 0.9rem;">
         NovaPark@gmail.com
       </div>
     </div>
@@ -191,9 +192,9 @@
 
 
   <div>
-    <div style="margin-bottom: 1rem;">
-      <div style="font-weight:bold; padding-bottom: 0.5rem;">Nova Parc et Vous</div>
-      <a>
+    <nav style="margin-bottom: 1rem;">
+      <p><strong>Nova Parc et Vous</strong></p>
+      <p>
         Notre histoire
         <br>Accès / Horaires
         <br>Boutiques & Restaurants
@@ -201,25 +202,25 @@
         <br>Infos pratiques
         <br>Plans des centres
         <br>Emploi
-      </a>
-    </div>
-    <div>
-      <div style="font-weight:bold; padding-bottom: 0.5rem;">
-        Louer
-      </div>
-      <a>
+      </p>
+    </nav>
+    <nav>
+      <p>
+        <strong>Louer</strong>
+      </p>
+      <p>
         Un emplacement temporaire
         <br>Un local
-      </a>
-    </div>
+      </p>
+    </nav>
   </div>
 
 
 
   <div class="thirdFooterColumn">
     <section id="fixedPartagerFooter">
-      <div id="TwitterFooter"><img src="assets/images/twitter.png"></div>
-      <div id="FacebookFooter"><img src="assets/images/facebook.png"></div>
+      <a id="TwitterFooter" href="https://www.twitter.com" target="_blank"><img src="assets/images/twitter.png"></a>
+      <a id="FacebookFooter" href="https://www.facebook.com" target="_blank"><img src="assets/images/facebook.png"></a>
       <strong style="font-style: italic; margin-left: 1rem;"><a>#enmode</a><a style="color: red;">partage</a></strong>
     </section>
     <section>
@@ -235,7 +236,7 @@
 </div>
 
 
-<footer id="foot" style="font-size: 10px; padding-top: 20px;">
+<footer id="foot" style="font-size: 0.625rem; padding-top: 0.5rem; padding-bottom: 0.25rem;">
   <div>
     2025 Nova Park  Tous droits réservés
   </div>
