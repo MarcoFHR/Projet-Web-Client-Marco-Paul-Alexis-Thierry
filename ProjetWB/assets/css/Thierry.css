@@ -26,7 +26,7 @@
   }
 
   .cardImage {
-    -webkit-user-drag: none;
+    -webkit-user-drag: none;    
     width: 100%;                /* L'image remplit la largeur du conteneur */
     height: 100%;               /* L'image remplit la hauteur du conteneur */
     object-fit:cover;           /* L'image remplit le conteneur en conservant ses proportions */
@@ -159,7 +159,7 @@
 }
 
 .boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
-    transform: scale(1.05);         /* Transformation */ 
+    transform: scale(1.10);         /* Transformation */ 
 }
 
 /* div suivante */
@@ -358,35 +358,41 @@
         transform: translateX(-50%);/* Centrer horizontalement */
         margin-top: 120px;          /* Marge haute pour pas superposer avec le titre*/
     }
-}
 
-@media (max-width: 768px) {         /* Pour les écrans de 768px de largeur et moins */
-
-    .boxe2titre h2 {
-        font-size: 36px;            /* Réduire la taille de la police */
+    .boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
+        transform: scale(1.1);         /* Transformation */ 
+        left: 50%;                      /* Centrer le bouton */
+        transform: translateX(-50%) scale(1.05); /* Centrer horizontalement et agrandir */
+        }
     }
 
-    .boxe2icone {
+    @media (max-width: 768px) {         /* Pour les écrans de 768px de largeur et moins */
+
+        .boxe2titre h2 {
+        font-size: 36px;            /* Réduire la taille de la police */
+        }
+
+        .boxe2icone {
         width: 120px;               /* Réduire la largeur */
         height: 120px;              /* Réduire la hauteur */
-    }
+        }
 
-    .boxe2icone img {
+        .boxe2icone img {
         max-width: 60px;            /* Réduire la taille des images */
         max-height: 60px;
-    }
+        }
 
-    .boxe2paragraphe {
+        .boxe2paragraphe {
         font-size: 18px;            /* Réduire la taille de la police */
         max-width: 90%;             /* Élargir pour remplir plus d'espace */
-    }
+        }
 
-    .enModeTips {
+        .enModeTips {
         padding: 10px;              /* Réduire le padding */
         min-height: auto;           /* Supprimer la hauteur minimale fixe */
-    }
+        }
 
-    .enModeTipsTitre {
+        .enModeTipsTitre {
         font-size: 36px;            /* Réduire la taille de la police */
         top: -60px;                 /* Ajuster la position */
     }
