@@ -59,6 +59,9 @@
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 <!-- ------------------------------------------------------>
@@ -159,10 +162,13 @@
                 <p class="infosBonsPlans">Infos & Bons plans</p>  <!-- on ajoute le titre -->
             
                 <div class="barreMail">  <!-- on créer une div pour la barre mail -->
-                    <p class="votreEmail">Votre email</p>   <!-- on ajoute le texte -->
-                    <img src="assets/images/Boxe2/fleche.png" alt="fleche"> <!-- on ajoute une image de flèche -->
+                    <input type="text" id="emailInput" placeholder="Votre mail">   <!-- on ajoute un input pour rentrer l'adresse mail -->
+                    <img id="souscrire" src="assets/images/Boxe2/fleche.png" alt="fleche"> <!-- on ajoute une image de flèche -->
                 </div>
-            
+
+                <span id="confirmationMessage" style="color: green;">Vous êtes bien inscrit à notre newsletter</span>   <!-- Affiche un message de confirmation d'inscription à la newsletter -->
+                <span id="errorMessage" style="color: red;">Veuillez entrer une adresse email valide.</span>    <!-- Affiche un message de d'erreur -->
+                
                 <p class="tipsTexte">   <!-- on ajoute le texte -->
                     En renseignant votre adresse e-mail, vous acceptez de recevoir des informations de la part
                     des enseignes et vous prenez connaissance de notre Politique de confidentialité.
@@ -190,43 +196,109 @@
         <img class="scrollBouton" src="assets/images/Boxe2/precedent.png" id="previous">   <!-- on ajoute une image de bannière -->
         
         <div class="bannière">
-            <img class="iconeMagasin" src="assets/images/Boxe2/pharmacie.png" alt="pharmacie">
-            <img class="iconeMagasin" src="assets/images/Boxe2/hopital.png" alt="Hopital">
-            <img class="iconeMagasin" src="assets/images/Boxe2/bruitCuisine.png" alt="bruitCuisine">
-            <img class="iconeMagasin" src="assets/images/Boxe2/fnac.png" alt="fnac">
-            <img class="iconeMagasin" src="assets/images/Boxe2/H&M.png" alt="H&M">
-            <img class="iconeMagasin" src="assets/images/Boxe2/McDo.png" alt="McDo">
-            <img class="iconeMagasin" src="assets/images/Boxe2/sephora.png" alt="sephora">
-            <img class="iconeMagasin" src="assets/images/Boxe2/marionnaud.png" alt="marionnaud">
-            <img class="iconeMagasin" src="assets/images/Boxe2/normal.png" alt="normal">
-            <img class="iconeMagasin" src="assets/images/Boxe2/jdSport.png" alt="jdSport">
+            <a href="https://pharmacie-principale-tours.pharmabest.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/pharmacie.png" alt="pharmacie">
+            </a>
+            <a href="http://chu-tours.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/hopital.png" alt="Hopital">
+            </a>
+            <a href="https://www.dubruitdanslacuisine.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/bruitCuisine.png" alt="bruitCuisine">
+            </a>
+            <a href="https://www.fnac.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/fnac.png" alt="fnac">
+            </a>
+            <a href="https://www2.hm.com/fr_fr/index.html" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/H&M.png" alt="H&M">
+            </a>
+            <a href="https://www.mcdonalds.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/McDo.png" alt="McDo">
+            </a>
+            <a href="https://www.sephora.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/sephora.png" alt="sephora">
+            </a>
+            <a href="https://www.marionnaud.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/marionnaud.png" alt="marionnaud">
+            </a>
+            <a href="https://www.normal.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/normal.png" alt="normal">
+            </a>
+            <a href="https://www.jdsports.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/jdSport.png" alt="jdSport">
+            </a>
             <img class="iconeMagasin" src="assets/images/Boxe2/leroyMerlin.png" alt="Leroy Merlin">
-            <img class="iconeMagasin" src="assets/images/Boxe2/rolex.png" alt="rolex">
-            <img class="iconeMagasin" src="assets/images/Boxe2/feuVert.png" alt="Feu Vert">
-            <img class="iconeMagasin" src="assets/images/Boxe2/louisVuitton.png" alt="Louis Vuitton">
-            <img class="iconeMagasin" src="assets/images/Boxe2/buggati.png" alt="Buggati">
-            <img class="iconeMagasin" src="assets/images/Boxe2/tesla.png" alt="Tesla">
-            <img class="iconeMagasin" src="assets/images/Boxe2/Wallmart.png" alt="Wallmart">
-            <img class="iconeMagasin" src="assets/images/Boxe2/ikea.png" alt="Ikea">
-            <img class="iconeMagasin" src="assets/images/Boxe2/7-Eleven.png" alt="7-Eleven">
-            <img class="iconeMagasin" src="assets/images/Boxe2/pepeChicken.png" alt="Pepe Chicken">
-            <img class="iconeMagasin" src="assets/images/Boxe2/laKazdalerie.png" alt="la Kazdalerie">
-            <img class="iconeMagasin" src="assets/images/Boxe2/basicFit.png" alt="BasicFit">
-            <img class="iconeMagasin" src="assets/images/Boxe2/leLouvre.png" alt="LeLouvre">
-            <img class="iconeMagasin" src="assets/images/Boxe2/zoo.png" alt="zoo">
-            <img class="iconeMagasin" src="assets/images/Boxe2/parcAsterix.png" alt="Parc Asterix">
-            <img class="iconeMagasin" src="assets/images/Boxe2/montEverest.png" alt="Mont Everest">
-            <img class="iconeMagasin" src="assets/images/Boxe2/lycée.png" alt="Lycée Jeanne d'Arc">
-            <img class="iconeMagasin" src="assets/images/Boxe2/CAF.png" alt="CAF">
-            <img class="iconeMagasin" src="assets/images/Boxe2/MIT.png" alt="MIT">
-            <img class="iconeMagasin" src="assets/images/Boxe2/parisAeroport.png" alt="ParisAeroport">
-            <img class="iconeMagasin" src="assets/images/Boxe2/google.png" alt="Google">
-            <img class="iconeMagasin" src="assets/images/Boxe2/小米.png" alt="小米">
-            <img class="iconeMagasin" src="assets/images/Boxe2/Tencent.png" alt="Tencent">
+            <a href="https://www.rolex.com/fr" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/rolex.png" alt="rolex">
+            </a></a>
+            <a href="https://www.feuvert.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/feuVert.png" alt="Feu Vert">
+            </a>
+            <a href="https://fr.louisvuitton.com/fra-fr/homepage" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/louisVuitton.png" alt="Louis Vuitton">
+            </a>
+            <a href="https://www.bugatti.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/buggati.png" alt="Buggati">
+            </a></a>
+            <a href="https://www.tesla.com/fr_fr" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/tesla.png" alt="Tesla">
+            </a>
+            <a href="https://www.walmart.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/Wallmart.png" alt="Wallmart">
+            </a>
+            <a href="https://www.ikea.com/fr/fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/ikea.png" alt="Ikea">
+            </a>
+            <a href="https://www.7-eleven.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/7-Eleven.png" alt="7-Eleven">
+            </a>
+            <a href="https://www.pepechicken.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/pepeChicken.png" alt="Pepe Chicken">
+            </a>
+            <a href="https://www.lakazdalerie.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/laKazdalerie.png" alt="la Kazdalerie">
+            </a>
+            <a href="https://www.basic-fit.com/fr-fr/home" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/basicFit.png" alt="BasicFit">
+            </a>
+            <a href="https://www.louvre.fr/visiter/venir-en-groupe/groupes-touristiques-et-de-loisirs/reserver-une-visite-avec-un-guide-conferencier-du-musee" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/leLouvre.png" alt="LeLouvre">
+            </a>
+            <a href="https://www.gzu.ac.zw/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/zoo.png" alt="zoo">
+            </a>
+            <a href="https://www.parcasterix.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/parcAsterix.png" alt="Parc Asterix">
+            </a></a>
+            <a href="https://www.mount-everest.net/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/montEverest.png" alt="Mont Everest">
+            </a>
+            <a href="https://sja-su.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/lycée.png" alt="Lycée Jeanne d'Arc">
+            </a>
+            <a href="https://www.caf.fr/allocataires/caf-de-touraine" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/CAF.png" alt="CAF">
+            </a>
+            <a href="https://www.mit.edu/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/MIT.png" alt="MIT">
+            </a>
+            <a href="https://www.parisaeroport.fr/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/parisAeroport.png" alt="ParisAeroport">
+            </a></a>
+            <a href="https://www.google.com/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/google.png" alt="Google">
+            </a>
+            <a href="https://www.mi.com/index.html" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/小米.png" alt="小米">
+            </a>
+            <a href="https://www.tencent.com/zh-cn/" target="_blank">
+                <img class="iconeMagasin" src="assets/images/Boxe2/Tencent.png" alt="Tencent">
+            </a>
         </div>
         
         <img class="scrollBouton" src="assets/images/Boxe2/suivant.png" id="next" />   <!-- on ajoute une image de bannière -->
         
+
+
     </div>
 
     <script src="assets/js/Thierry.js"></script>

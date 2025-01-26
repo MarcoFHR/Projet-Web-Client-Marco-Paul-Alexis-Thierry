@@ -38,20 +38,6 @@
     z-index: 1;
 }
 
-.boutiquesInfo {                /* Conteneur de la boxe 2 */
-    display: flex;              /* Flexbox */
-    justify-content: center;    /* Centrage horizontal */
-    min-height: 300px;          /* Hauteur minimale */
-    gap: 50px;
-    flex-wrap: wrap;            /* Permet de passer à la ligne lorsque la largeur de l'écran est trop petite */
-    padding-left: 100px;        /* Espace à gauche pour pas superposer avec le #enmodepartage*/
-    padding-right: 100px;       /* Espace à droite pour équilibrer le padding gauche */
-
-    animation: appear linear;       /* Animation d'apparition */
-    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
-    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
-}
-
 .boxe2titre {                   /* Titre de la boxe 2 */
     margin-bottom: 20px;        /* Marge basse */
     margin-left: 300px;         /* Marge gauche */
@@ -61,16 +47,31 @@
     animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
+.boutiquesInfo {                /* Conteneur de la boxe 2 */
+    display: flex;              /* Flexbox */
+    justify-content: center;    /* Centrage horizontal */
+    min-height: 300px;          /* Hauteur minimale */
+    gap: 50px;
+    flex-wrap: wrap;            /* Permet de passer à la ligne lorsque la largeur de l'écran est trop petite */
+    padding-left: 100px;        /* Espace à gauche pour pas superposer avec le #enmodepartage*/
+    padding-right: 100px;       /* Espace à droite pour équilibrer le padding gauche */
+    cursor: pointer;            /* Curseur pour indiquer que l'on peut cliquer */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
+}
+
 .boxe2icone {                       /* Conteneur de l'icône */
     font: "Arial", "Fira Sans", sans-serif;   /* Police */
     font-weight: 500;               /* Poids de la police */
-    font-size: 18px;                /* Taille de la police */
+    font-size: 24px;                /* Taille de la police */
     background-color: rgba(0, 0, 0, 0.4);   /* Couleur de fond */
     border: 4px solid white;      /* Bordure */
     border-radius: 8px;             /* Rayon de la bordure */
     padding: 10px;                  /* Remplissage */
-    width: 160px;                   /* Largeur */
-    height: 160px;                  /* Hauteur */
+    width: 200px;                   /* Largeur */
+    height: 200px;                  /* Hauteur */
     display: flex;                  /* Flexbox est un conteneur flexible qui permet d'aligner et de distribuer l'espace entre les éléments d'un composant */ 
     flex-direction: column;         /* Direction de la flexbox permet de placer le nom en bas des icones */
     align-items: center;            /* Alignement vertical */
@@ -80,9 +81,8 @@
 }
 
 .boxe2icone img {                   /* Images de la boxe 2 */
-    max-width: 90px;                /* Largeur maximale */
-    max-height: 90px;               /* Hauteur maximale */
-    margin-bottom: 1px;             /* Marge basse */
+    max-width: 100px;               /* Largeur maximale */
+    max-height: 100px;              /* Hauteur maximale */
 }
 
 .boxe2icone p {                     /* Nom des icones afficher de la boxe 2 */
@@ -127,6 +127,7 @@
     border-radius: 10px;            /* Rayon de la bordure */
     width: 230px;                   /* Largeur */
     transition: 0.4s;               /* Durée de la transition */
+    cursor: pointer;                /* Curseur pour indiquer que l'on peut cliquer */
 }
 
 .boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
@@ -135,7 +136,7 @@
 
 .boxe2paragraphe {                  /* Paragraphe de la boxe 2 */ 
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
-    font-size: 26px;                /* Taille de la police */
+    font-size: 32px;                /* Taille de la police */
     max-width: 58%;                 /* Largeur maximale */
     text-align: center;             /* Alignement du texte au centre */
     margin: 0 auto;                 /* Centrage horizontal */
@@ -157,7 +158,7 @@
 .enModeTips {                       /* Conteneur du #enModeTips rectangle jaune */
     min-height: 400px;              /* Hauteur minimale */
     width: 90%;                     /* Largeur */
-    max-width: 1200px;              /* Largeur maximale */
+    max-width: 1400px;              /* Largeur maximale */
     padding: 20px;                  /* Remplissage */
     box-sizing: border-box;         /* Inclure le padding et la bordure dans la largeur totale */
     position: relative;             /* Position relative */
@@ -205,30 +206,55 @@
     display: flex;                  /* Flexbox */
     justify-content: center;        /* Centrage horizontal */
     align-items: center;            /* Alignement vertical */
-    gap: 250px;                     /* Espacement entre les éléments */
     white-space: nowrap;            /* Empêche le retour à la ligne */
     border: 3px solid black;      /* Bordure */
     border-radius: 50px;            /* Rayon de la bordure */
     width: 400px;                   /* Largeur */
     padding: 5px;                   /* Remplissage */
+    gap: 20px;                      /* Espacement entre les éléments */
     transform: translateY(-28%);    /* Translation */
 }
 
+.barreMail input {                  /* Input de la barre mail */
+    border: none;                   /* Pas de bordure */
+    outline: none;                  /* Pas de contour */
+    padding: 5px;                   /* Remplissage */
+    width: 300px;                   /* Largeur */
+    font-size: 24px;                /* Taille de la police */
+    background-color: transparent;  /* Couleur de fond */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
+}
 
 .enModeTips img {                   /* Images de la flèche dans la barre mail */
-    max-width: 20px;                /* Largeur maximale */
-    max-height: 20px;               /* Hauteur maximale */
+    max-width: 25px;                /* Largeur maximale */
+    max-height: 25px;               /* Hauteur maximale */
     transition: 0.4s;               /* Durée de la transition */
+    cursor: pointer;                /* Curseur pour indiquer que l'on peut cliquer */
 }
 
 .enModeTips img:hover {             /* Effet au survol des icones lorsqu'on place notre curseur sur l'icone */
-    transform: translateX(10px);    /* Translation */
+    transform: translateX(10px);    /* Translation pour décaler l'icone */
+}
+
+.enModeTips img:active {            /* Effet au clic des icones lorsqu'on clique sur l'icone */
+    transform: scale(0.8) translateX(10px);    /* Transformation lorsqu'on clique sur l'icone */
+}
+
+#confirmationMessage, #errorMessage {   /* message après envoie du mail (pour l'instant pas afficher) */
+    opacity: 0; /* Invisibles au départ */
+    visibility: hidden; /* Rend les messages invisibles (évite qu'ils prennent de la place dans le DOM) */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Animations */
+}
+    
+#confirmationMessage.show, #errorMessage.show { /* Lorsqu'on veut les afficher */
+    opacity: 1; /* Opacité visible */
+    visibility: visible; /* Les rend visibles */
 }
 
 .tipsTexte {                        /* Texte du conteneur enModeTips */
     width: 90%;                     /* Largeur */
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
-    font-size: 18px;                /* Taille de la police */
+    font-size: 24px;                /* Taille de la police */
     color: black;                 /* Couleur du texte */
     text-align: center;             /* Alignement du texte */
     margin-bottom: 10px;
@@ -322,7 +348,7 @@
     display: flex;                  /* Flexbox */
     justify-content: center;        /* Centrage horizontal */
     align-items: center;            /* Alignement vertical */
-    gap: 63rem;                     /* Espacement entre les éléments */
+    gap: 90rem;                     /* Espacement entre les éléments */
 }
 
 .arrièrePlanRouge img {
@@ -333,7 +359,11 @@
     width: 75px;                   /* Largeur */
     height: 75px;                  /* Hauteur */;
     cursor: pointer;               /* Curseur pour indiquer que l'on peut cliquer */
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease;   /* Transition pour l'effet de survol */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
 .scrollBouton:active {
@@ -347,11 +377,15 @@
     position: absolute;             /* Position absolue */
     gap: 25px;                      /* Espacement entre les éléments */
     padding: 1rem;                  /* Remplissage rem = 16px */
-    max-width: 950px;               /* Largeur maximale */
+    max-width: 1330px;               /* Largeur maximale */
 
     /*outline: 3px solid black;      /* Bordure */
 
     overflow-x: scroll;             /* Défilement horizontal */
+
+    animation: appear linear;       /* Animation d'apparition */
+    animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
+    animation-range: entry 0% cover 30%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
 
 .bannière::-webkit-scrollbar {      /* Barre de défilement */
@@ -371,3 +405,4 @@
 .iconeMagasin:hover {
     transform: scale(1.1);          /* Agrandir l'image au survol */
 }
+
