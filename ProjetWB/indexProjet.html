@@ -41,39 +41,46 @@
 <!-- ------------------------------------------------------>
 <div style="position: sticky; top: 0; width: 100%; z-index: 1000;">
   <div id="fixedHead">
-    <div><img src="assets/images/novaParcLogo.png" style="height: 75px; width: 75px;"></div>
+    <div><img src="assets/images/novaParcLogo.png" style="height: 4.5rem; width: 4.5rem;"></div>
     <div class="gradient-hover-text">Boutiques & Restaurants</div>
     <div>Actus & Bons plans</div>
     <div>Infos pratiques</div>
-    <div id="blocHoraires">HORAIRES</div>
+    <div class="overBlocH">
+      <section id="blocHoraires">
+
+      </section>
+      <section id="horairesClick">
+        <div id="hc1" style="margin-top: 1rem;">
+          Lundi: Fermé.
+        </div>
+        <div id="hc2">
+          Mardi: 09:00 à 22:00.
+        </div>
+        <div id="hc3">
+          Mercredi: 09:00 à 22:00.
+        </div>
+        <div id="hc4">
+          Jeudi: 09:00 à 22:00.
+        </div>
+        <div id="hc5">
+          Vendredi: 09:00 à 23:00.
+        </div>
+        <div id="hc6">
+          Samedi: 10:30 à 23:00.
+        </div>
+        <div id="hc0">
+          Dimanche: 10:30 à 23:00.
+        </div>
+      </section>
+    </div>
+
+
     <div id="fixedHeadSearchIcon"><img src="assets/images/fixedSearch.png"></div>
   </div>
   <div style="background-color: black; color: white; font-size: 0.7rem; padding: 0.5rem; text-align: center; ">
     Ouverture exceptionnelle le lundi 10 février en raison de la Saint-Valentin
   </div>
-  <div id="horairesClick">
-    <div>
-      Lundi: Fermé. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
-    </div>
-    <div>
-      Mardi: 09:00 à 22:00.
-    </div>
-    <div>
-      Mercredi: 09:00 à 22:00.
-    </div>
-    <div>
-      Jeudi: 09:00 à 22:00.
-    </div>
-    <div>
-      Vendredi: 09:00 à 23:00.
-    </div>
-    <div>
-      Samedi: 10:30 à 23:00.
-    </div>
-    <div>
-      Dimanche: 10:30 à 22:00.
-    </div>
-  </div>
+
 </div>
 
 
@@ -160,13 +167,14 @@
 <!------------------------ FOOTER ------------------------->
 <!-- ---------------------------------------------------------->
 
-<div id="foot">
-  <div>
-    <div>
-      <img src="assets/images/novaParcLogo.png" style="height: 75px; width: 75px;">
+<div id="foot" style="padding-top: 4rem; padding-bottom: 2rem;">
+  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <div style="transform: translateY(-2rem);">
+      <img src="assets/images/novaParcLogo.png" style="height: 10rem; width: 10rem;">
     </div>
     <div>
-      adresse
+      <div style="font-weight:bold; padding-bottom: 0.5rem;">Nova Parc</div>
+      <a>adresse</a>
     </div>
     <div>
       <div id="footerBubbles" style="font-size: 0.7rem;">
@@ -183,9 +191,10 @@
 
 
   <div>
-    <div>
+    <div style="margin-bottom: 1rem;">
+      <div style="font-weight:bold; padding-bottom: 0.5rem;">Nova Parc et Vous</div>
       <a>
-        <br>Notre histoire
+        Notre histoire
         <br>Accès / Horaires
         <br>Boutiques & Restaurants
         <br>Actus & bons plans
@@ -195,24 +204,33 @@
       </a>
     </div>
     <div>
-      b
+      <div style="font-weight:bold; padding-bottom: 0.5rem;">
+        Louer
+      </div>
+      <a>
+        Un emplacement temporaire
+        <br>Un local
+      </a>
     </div>
   </div>
 
 
 
-  <div>
-    <div id="fixedPartagerFooter">
+  <div class="thirdFooterColumn">
+    <section id="fixedPartagerFooter">
       <div id="TwitterFooter"><img src="assets/images/twitter.png"></div>
       <div id="FacebookFooter"><img src="assets/images/facebook.png"></div>
-      <div>#enmodepartage</div>
-    </div>
-    <div>
-      b
-    </div>
-    <div>
-      c
-    </div>
+      <strong style="font-style: italic; margin-left: 1rem;"><a>#enmode</a><a style="color: red;">partage</a></strong>
+    </section>
+    <section>
+      <strong>
+        Infos et bons plans
+      </strong>
+    </section>
+    <section id="rightFooterBubble">
+      <a>Votre email</a>
+      <img src="assets/images/fleche.png">
+    </section>
   </div>
 </div>
 

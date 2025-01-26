@@ -4,16 +4,17 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Albert Sans', sans-serif;
+  /*font: normal normal normal 'Albert Sans';*/
   background-image: url("../images/fixedShoppingMall.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 #foot{
-  background: linear-gradient(to right, #fc6a03, #a33ce2, #6a0dad);
+  /*background: linear-gradient(to right, #fc6a03, #a33ce2, #6a0dad);*/
+  background-color: white;
   color: black;
   display: flex; /* alignement horizontal */
   justify-content: space-around; /* espace distribué égal */
-  align-items: center; /* centre verticalement les elems */
   width: 100%;
   bottom: 0;
 }
@@ -40,11 +41,13 @@ body{
 */
   font-weight: bold;
   height: 10vh; /* 10% de viewport height */
-  background: linear-gradient(to right, #fc6a03, #a33ce2, #6a0dad);
+  /*background: linear-gradient(to right, #fc6a03, #a33ce2, #6a0dad);*/
+  background-color: black;
   color: black;
   display: flex; /* alignement horizontal */
   align-items: center; /* centre verticalement les elems */
   justify-content: space-around; /* espace distribué égal */
+  border-bottom: solid 0.05rem white;
 }
 
 #fixedHeadSearchIcon{
@@ -59,20 +62,29 @@ body{
   align-items: center; /* centre verticalement les elems */
 }
 #fixedHeadSearchIcon img{
-  height: 25px;
-  width: 25px;
+  height: 1rem;
+  width: 1rem;
 }
 
 #fixedHead img, #fixedHead div {
   margin: 0 10px;
 }
+.overBlocH{
+  position: relative;
+  background-color: blue;
+  border-radius: 20px;
+  justify-content: center;
+}
 
 #blocHoraires{
+  position: relative;
+  z-index: 2000;
   border: solid #FA2201;
   border-radius: 20px;
   background-color: #FA5801;
   padding: 10px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 #horairesClick{
@@ -81,13 +93,28 @@ body{
 TURN THIS INTO A DROP DOWN FROM "HORAIRES"
 
   */
+
+  border-radius: 20px;
   position: absolute;
+  left:0;
+  top:0;
+  font-size: 0.5rem;
+  width: 100%;
   display: none;
-  right: 7rem;
-  z-index: 2000;
+  z-index: 1000;
+  /*
   width: 10rem;
   height: 10rem;
+  */
   background-color: white;
+  white-space: nowrap;
+  text-align: center;
+}
+#horairesClick div{
+  padding: 1rem;
+  background-color: red;
+  white-space: nowrap;
+  margin-bottom: 0.7rem;
 }
 
 #fixedPartagerLeft {
@@ -154,21 +181,65 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
   height: 30px;
 }
 
+#rightFooterBubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    gap: 10rem;
+    white-space: nowrap;
+    border: 0.2rem solid black;
+    border-radius: 10rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+#rightFooterBubble img{
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 0.5s;
+}
+#rightFooterBubble img:hover{
+  transform: translateX(1rem);
+}
 
-
-
+.thirdFooterColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.thirdFooterColumn section{
+  margin-bottom: 4rem;
+}
+/*
+.hcBackgroundColor{
+  background: linear-gradient(to right, #EC1C24 40%, #EC1C24 60%, blue 70%, blue 90%);
+  background-size: 300%;
+  background-position: 0%;
+  animation: hc 2s infinite linear;
+}
+@keyframes hc {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+*/
 .gradient-hover-text {
-  background: linear-gradient(to right, #a33ce2, #fc6a03, #a33ce2,#fc6a03); /* Ensure the first and last colors are the same */
-  background-size: 300%; /* Extend the gradient further for smoother looping */
-  background-position: 0%; /* Default position */
+  background: linear-gradient(to right, #a33ce2, #fc6a03, #a33ce2,#fc6a03);
+  background-size: 300%;
+  background-position: 0%;
   color: transparent;
-  -webkit-background-clip: text; /* Clips the gradient to the text */
-  /*-webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  -webkit-background-clip: text;
+  /*-webkit-text-fill-color: transparent;*/
   animation-play-state: paused;
 }
 
 .gradient-hover-text:hover {
-  animation: gradient-cycle 2s infinite linear; /* Smooth infinite animation */
+  animation: gradient-cycle 2s infinite linear;
 }
 
 @keyframes gradient-cycle {
@@ -176,10 +247,73 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
     background-position: 0%;
   }
   100% {
-    background-position: 100%; /* Full cycle with no abrupt jump */
+    background-position: 100%;
   }
 }
 
+.hcBackgroundColor {
+  margin: 100px;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.hcBackgroundColor::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.hcBackgroundColor::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+
+.hcBackgroundColor:hover::before {
+  opacity: 1;
+}
+
+.hcBackgroundColor:active:after {
+  background: transparent;
+}
+
+.hcBackgroundColor:active {
+  color: #000;
+  font-weight: bold;
+}
 
 /* Ceci sont tous des attempts ratés à créer une animation infinie qui cycle
 un gradient sur hover et qui retourne au gradient de départ de façon non-brutale lors que l'on arrête le hover.

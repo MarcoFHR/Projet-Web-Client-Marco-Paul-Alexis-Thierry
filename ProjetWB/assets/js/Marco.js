@@ -46,14 +46,35 @@ function changeBGColor(elem, color){
 function toggleBloc(elem, lock){
   if(lock.value){
     elem.style.display = "none";
-    console.log("1");
   }
   else{
-    elem.style.display = "inline";
-    console.log("2");
+    elem.style.display = "block";
   }
   lock.value = !lock.value;
-  console.log("passed: "+lock.value);
+}
+
+function dayOfTheWeekString(hcElem){
+  var today = new Date();
+  var day = today.getDay();
+  hcElem.value = "hc"+day;
+  var s = "blank";
+  if(day == 1){
+    s = "Fermé";
+  }
+  else if(day == 0 || day == 6){
+    s = "Ouvert - 10:30 à 23:00";
+  }
+  else if (day < 5){
+    s = "Ouvert - 9:00 à 22:00";
+  }
+  else{
+    s = "Ouvert - 9:00 à 23:00";
+  }
+  return s;
+}
+
+function animate(elem){
+  elem.classList.add("hcBackgroundColor");
 }
 
 var fl1 = document.getElementById("fixedTwitter");
@@ -84,3 +105,8 @@ var blocHoraires = document.getElementById("blocHoraires");
 var blocHorairesLOCK = {value: false};
 var horairesClick = document.getElementById("horairesClick");
 blocHoraires.onclick = function() {toggleBloc(horairesClick, blocHorairesLOCK);};
+
+var hcElem = {value : ""};
+document.getElementById("blocHoraires").textContent = dayOfTheWeekString(hcElem);
+console.log(hcElem.value);
+animate(document.getElementById(hcElem.value));
