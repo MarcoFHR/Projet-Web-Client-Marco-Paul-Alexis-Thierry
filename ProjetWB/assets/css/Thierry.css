@@ -348,7 +348,7 @@
     display: flex;                  /* Flexbox */
     justify-content: center;        /* Centrage horizontal */
     align-items: center;            /* Alignement vertical */
-    gap: 90rem;                     /* Espacement entre les éléments */
+    gap: 75rem;                     /* Espacement entre les éléments */
 }
 
 .arrièrePlanRouge img {
@@ -377,7 +377,7 @@
     position: absolute;             /* Position absolue */
     gap: 25px;                      /* Espacement entre les éléments */
     padding: 1rem;                  /* Remplissage rem = 16px */
-    max-width: 1330px;               /* Largeur maximale */
+    max-width: 1135px;               /* Largeur maximale */
 
     /*outline: 3px solid black;      /* Bordure */
 
@@ -407,3 +407,65 @@
     transform: scale(1.1);          /* Agrandir l'image au survol */
 }
 
+@media (max-width: 1440px) {
+    .arrièrePlanRouge {
+        gap: 47rem;                 /* Réduire l'espacement entre les éléments */
+        height: 35rem;
+    }
+
+    .bannière {
+        width: 700px;
+    }
+
+    .scrollBouton {
+        width: 60px;                /* Réduire la largeur */
+        height: 60px;               /* Réduire la hauteur */
+    }
+
+    .iconeMagasin {
+        width: 120px;               /* Réduire la largeur */
+        height: 120px;              /* Réduire la hauteur */
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrièrePlanRouge {
+        gap: 34rem;                 /* Réduire l'espacement entre les éléments */
+        height: 33rem;
+    }
+
+    .bannière {
+        width: 500px;
+    }
+
+    .scrollBouton {
+        width: 50px;                /* Réduire la largeur */
+        height: 50px;               /* Réduire la hauteur */
+    }
+
+    .iconeMagasin {
+        width: 100px;               /* Réduire la largeur */
+        height: 100px;              /* Réduire la hauteur */
+    }
+}
+
+@media (max-width: 768px) {
+    .arrièrePlanRouge {
+        gap: 24rem;                 /* Réduire encore l'espacement entre les éléments */
+        height: 30rem;
+    }
+
+    .bannière {
+        width: 340px;
+    }
+
+    .scrollBouton {
+        width: 40px;                /* Réduire encore la largeur */
+        height: 40px;               /* Réduire encore la hauteur */
+    }
+
+    .iconeMagasin {
+        width: 80px;                /* Réduire encore la largeur */
+        height: 80px;               /* Réduire encore la hauteur */
+    }
+}
