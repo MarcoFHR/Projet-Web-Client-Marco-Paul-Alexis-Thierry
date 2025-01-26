@@ -348,7 +348,7 @@
     display: flex;                  /* Flexbox */
     justify-content: center;        /* Centrage horizontal */
     align-items: center;            /* Alignement vertical */
-    gap: 75rem;                     /* Espacement entre les éléments */
+    gap: 74rem;                     /* Espacement entre les éléments */
 }
 
 .arrièrePlanRouge img {
@@ -356,8 +356,8 @@
 }
 
 .scrollBouton {
-    width: 75px;                   /* Largeur */
-    height: 75px;                  /* Hauteur */;
+    width: 70px;                   /* Largeur */
+    height: 70px;                  /* Hauteur */;
     cursor: pointer;               /* Curseur pour indiquer que l'on peut cliquer */
     transition: transform 0.2s ease;   /* Transition pour l'effet de survol */
 
