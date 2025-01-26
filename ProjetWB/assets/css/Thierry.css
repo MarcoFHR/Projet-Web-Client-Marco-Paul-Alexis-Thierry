@@ -41,11 +41,50 @@
 .boxe2titre {                   /* Titre de la boxe 2 */
     margin-bottom: 20px;        /* Marge basse */
     margin-left: 300px;         /* Marge gauche */
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
 
     animation: appear linear;       /* Animation d'apparition */
     animation-timeline: view();     /* Animation timeline lorsqu'on voit l'élément */
     animation-range: entry 0% cover 20%;    /* Animation range fait apparaitre l'élément de 0% à 30% */
 }
+
+.boxe2titre h2 {                    /* Titre de la boxe 2 */
+    font-weight: bold;              /* Poids de la police */
+    color: white;                 /* Couleur du texte */
+    font-size: 72px;                /* Taille de la police */
+    margin-bottom: -60px;           /* Marge basse */
+}
+
+
+.boxe2titre2 {                      /* Titre de la boxe 2 */
+    color: transparent;             /* Couleur du texte */
+    -webkit-text-stroke: 3px white;     /* Contour du texte */
+    letter-spacing: 2px;            /* Espacement des lettres */
+}
+
+.boxe2boutonTexte {                 /* Bouton de la boxe 2 */
+    font-weight: bold;              /* Poids de la police */
+    font-size: 18px;                /* Taille de la police */
+    position: relative;             /* Position relative */
+    text-align: center;             /* Alignement du texte */
+    background-color: white;      /* Couleur de fond */
+    color: red;                   /* Couleur du texte */
+    padding: 0.7rem;
+    padding-left: 2rem;             /* Remplissage gauche */
+    padding-right: 2rem;            /* Remplissage droit */
+    left: 70%;                      /* Position à gauche */
+    margin-bottom: 80px;            /* Marge basse */
+    border-radius: 10px;            /* Rayon de la bordure */
+    width: max-content;
+    transition: 0.4s;               /* Durée de la transition */
+    cursor: pointer;                /* Curseur pour indiquer que l'on peut cliquer */
+}
+
+.boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
+    transform: scale(1.05);         /* Transformation */ 
+}
+
+/* div suivante */
 
 .boutiquesInfo {                /* Conteneur de la boxe 2 */
     display: flex;              /* Flexbox */
@@ -93,45 +132,6 @@
     background-color: red;        /* Couleur de fond */
     color: #ff0000;               /* Couleur du texte */
     transform:translateY(-15px);    /* Translation */
-}
-
-.boxe2titre {                       /* Titre de la boxe 2 */
-    margin-left: 200px;             /* Marge gauche */
-    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
-}
-
-.boxe2titre h2 {                    /* Titre de la boxe 2 */
-    font-weight: bold;              /* Poids de la police */
-    color: white;                 /* Couleur du texte */
-    font-size: 64px;                /* Taille de la police */
-    margin-bottom: -60px;           /* Marge basse */
-}
-
-.boxe2titre2 {                      /* Titre de la boxe 2 */
-    color: transparent;             /* Couleur du texte */
-    -webkit-text-stroke: 3px white;     /* Contour du texte */
-    letter-spacing: 2px;            /* Espacement des lettres */
-}
-
-
-.boxe2boutonTexte {                 /* Bouton de la boxe 2 */
-    font-weight: bold;              /* Poids de la police */
-    font-size: 18px;                /* Taille de la police */
-    position: relative;             /* Position relative */
-    text-align: center;             /* Alignement du texte */
-    background-color: white;      /* Couleur de fond */
-    color : red;                  /* Couleur du texte */
-    padding: 10px;                  /* Remplissage */
-    left: 60%;                      /* Position à gauche */
-    margin-bottom: 80px;            /* Marge basse */
-    border-radius: 10px;            /* Rayon de la bordure */
-    width: 230px;                   /* Largeur */
-    transition: 0.4s;               /* Durée de la transition */
-    cursor: pointer;                /* Curseur pour indiquer que l'on peut cliquer */
-}
-
-.boxe2boutonTexte:hover {           /* Effet au survol du bouton lorsqu'on place notre curseur sur le bouton */
-    transform: scale(1.05);         /* Transformation */
 }
 
 .boxe2paragraphe {                  /* Paragraphe de la boxe 2 */ 
@@ -268,7 +268,7 @@
 
 /* --------------- début MEDIA QUERIES ---------------*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) {    
 
     .boxe2titre {
         margin-left: 0;             /* Supprimer la marge gauche */
@@ -400,6 +400,7 @@
     object-fit: contain;            /* Adapter l'image à l'intérieur du carré sans l'étirer */
     flex: none;
     transition: 0.4s;               /* Transition pour l'effet de survol */
+    cursor: pointer;
 }
 
 .iconeMagasin:hover {
