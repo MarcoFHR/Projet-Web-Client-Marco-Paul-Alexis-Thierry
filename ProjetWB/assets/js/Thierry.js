@@ -1,3 +1,5 @@
+/************* DEBUT Actus & Bons Plans (Slider 1) *************/
+
 const carousel = document.querySelector('.carousel'); // Sélectionne l'élément de la carousel
 
 let isDragging = false; // Pour savoir si la souris est maintenue enfoncée
@@ -28,6 +30,11 @@ carousel.addEventListener('mousemove', (e) => {
   const walk = (x - startX); // Distance parcourue (le *2 accélère le défilement)
   carousel.scrollLeft = scrollLeft - walk; // Modifie la position de défilement
 });
+
+/************* FIN Actus & Bons Plans (Slider 1) *************/
+
+
+
 
 
 /************* DEBUT Barre de mail *************/
