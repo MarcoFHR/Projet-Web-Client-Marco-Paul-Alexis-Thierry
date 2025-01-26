@@ -51,7 +51,7 @@ body{
 }
 
 #fixedHeadSearchIcon{
-  background-color: #FA5801;
+  background-color: #EC1C24;
   border-radius: 50%;
   border: 4px solid black;
   height: 35px;
@@ -81,10 +81,32 @@ body{
   z-index: 2000;
   border: solid #FA2201;
   border-radius: 20px;
-  background-color: #FA5801;
+  background-color: #EC1C24;
   padding: 10px;
   cursor: pointer;
   white-space: nowrap;
+  min-width: 10rem;
+  text-align: center;
+}
+
+#blocHoraires::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  z-index: -1;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+#blocHoraires:hover::before {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0;
 }
 
 #horairesClick{
@@ -94,27 +116,32 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
 
   */
 
-  border-radius: 20px;
+  border-radius: 1.25rem;
   position: absolute;
   left:0;
   top:0;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   width: 100%;
-  display: none;
+  /*display: none;*/
   z-index: 1000;
   /*
   width: 10rem;
   height: 10rem;
   */
-  background-color: white;
+  background-color: black;
   white-space: nowrap;
   text-align: center;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+  overflow: hidden;
+
 }
 #horairesClick div{
   padding: 1rem;
   background-color: red;
   white-space: nowrap;
   margin-bottom: 0.7rem;
+  border-radius: 1.25rem;
 }
 
 #fixedPartagerLeft {
@@ -253,14 +280,16 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
 
 .hcBackgroundColor {
   margin: 100px;
-  padding: 15px 40px;
   border: none;
   outline: none;
-  color: #FFF;
-  cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 12px;
+  border-radius: 1.25rem;
+
+  opacity: 1;
+  background: transparent;
+
+  font-weight: bold;
 }
 .hcBackgroundColor::after {
   content: "";
@@ -268,10 +297,9 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #333;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 1.25rem;
 }
 /* glow */
 .hcBackgroundColor::before {
@@ -286,33 +314,17 @@ TURN THIS INTO A DROP DOWN FROM "HORAIRES"
   left: -2px;
   background-size: 600%;
   z-index: -1;
-  width: calc(100% + 4px);
-  height:  calc(100% + 4px);
-  filter: blur(8px);
+  width: calc(100% + 0.25rem);
+  height: calc(100% + 0.25rem);
+  filter: blur(0.25rem);
   animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-  opacity: 0;
+  border-radius: 1.25rem;
 }
 
 @keyframes glowing {
   0% {background-position: 0 0;}
   50% {background-position: 400% 0;}
   100% {background-position: 0 0;}
-}
-
-
-.hcBackgroundColor:hover::before {
-  opacity: 1;
-}
-
-.hcBackgroundColor:active:after {
-  background: transparent;
-}
-
-.hcBackgroundColor:active {
-  color: #000;
-  font-weight: bold;
 }
 
 /* Ceci sont tous des attempts ratés à créer une animation infinie qui cycle
