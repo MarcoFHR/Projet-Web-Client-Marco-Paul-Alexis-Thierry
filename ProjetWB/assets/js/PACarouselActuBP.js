@@ -1,4 +1,4 @@
-/************* DEBUT Actus & Bons Plans (Slider 1) *************/
+/************* DEBUT Actus *************/
 
 const carousel = document.querySelector('.carouselaccueil2'); // Sélectionne l'élément de la carousel
 
@@ -31,4 +31,4 @@ carousel.addEventListener('mousemove', (e) => {
   carousel.scrollLeft = scrollLeft - walk; // Modifie la position de défilement
 });
 
-/************* FIN Actus & Bons Plans (Slider 1) *************/
+/************* FIN Actus *************/

@@ -1,333 +1,378 @@
+/* --------------- début Slider 1 ---------------*/
+
+/* Conteneur principal du carousel */
 .Accueilcarousel1-container {
-    position: relative;
-    width: 100%; /* Mobile-first : occupe toute la largeur */
-    margin: auto;
-    overflow: hidden;
+    position: relative; /* Permet de positionner les éléments enfants avec position absolue */
+    width: 100%; /* Mobile-first : le conteneur occupe toute la largeur disponible */
+    margin: auto; /* Centre le conteneur horizontalement */
+    overflow: hidden; /* Masque les éléments qui dépassent du conteneur */
 }
 
+/* Conteneur des éléments du carousel */
 .Accueilcarousel1 {
-    margin-top: 3vw;
-    display: flex;
-    transition: transform 0.5s ease;
+    margin-top: 3vw; /* Ajoute un espace au-dessus du carousel, dépendant de la largeur de l'écran */
+    display: flex; /* Dispose les éléments en ligne, nécessaire pour un slider horizontal */
+    transition: transform 0.5s ease; /* Animation fluide pour les mouvements du slider */
 }
 
+/* Éléments individuels du carousel */
 .Accueilcarousel1-item {
-    min-width: 100%; /* Mobile-first : chaque élément occupe 100% de la largeur */
-    margin-bottom: -15rem;
+    min-width: 100%; /* Chaque élément occupe 100% de la largeur du conteneur (pour un affichage un par un) */
+    margin-bottom: -15rem; /* Décale les marges inférieures des éléments */
 }
 
+/* Images des éléments du carousel */
 .Accueilcarousel1-item img {
-    border-radius: 2%;
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
+    border-radius: 2%; /* Arrondit légèrement les coins des images */
+    object-fit: cover; /* Adapte les images pour qu'elles remplissent leur conteneur sans déformation */
+    width: 100%; /* L'image s'étend sur toute la largeur de l'élément */
+    height: 70%; /* Définit une hauteur proportionnelle pour les images */
 }
 
-/* Boutons */
+/* Boutons de navigation (Précédent et Suivant) */
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem; /* Ajusté pour mobile */
-    z-index: 10;
+    position: absolute; /* Positionne les boutons par rapport au conteneur parent */
+    top: 50%; /* Centre verticalement les boutons */
+    transform: translateY(-50%); /* Ajuste le centrage vertical exact */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour les boutons */
+    color: white; /* Couleur du texte des boutons */
+    border: none; /* Supprime les bordures des boutons */
+    padding: 1rem; /* Ajoute de l'espace autour du contenu du bouton */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 1rem; /* Taille de la police adaptée aux écrans mobiles */
+    z-index: 10; /* Assure que les boutons apparaissent au-dessus des autres éléments */
 }
 
+/* Styles au survol des boutons */
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Rend le fond plus sombre au survol */
 }
 
+/* Bouton précédent (gauche) */
 .prev {
-    left: 0; /* Colle au côté gauche des images */
+    left: 0; /* Aligne le bouton au bord gauche */
 }
 
+/* Bouton suivant (droite) */
 .next {
-    right: 0; /* Colle au côté droit des images */
+    right: 0; /* Aligne le bouton au bord droit */
 }
 
-/* Responsiveness pour tablettes et desktops */
+/* Styles pour les écrans plus larges (tablettes et desktops) */
 @media screen and (min-width: 768px) {
     .Accueilcarousel1-item {
-        min-width: 50%; /* Pour les écrans plus larges */
+        min-width: 50%; /* Affiche deux éléments côte à côte sur des écrans larges */
     }
 
     .prev, .next {
-        padding: 0.8vw; /* Ajuste les boutons pour desktop */
-        font-size: 1vw;
+        padding: 0.8vw; /* Ajuste la taille des boutons pour écrans plus larges */
+        font-size: 1vw; /* Adapte la taille de la police */
     }
 }
 
-  
+/* Texte principal dans le carousel */
 .enmodeplaisir1 {
-    position: absolute;
-    top: 65%; /* Distance par rapport au haut */
-    left: 30%; /* Distance par rapport à la gauche */
-    transform: translate(-50%, -50%); /* Centre parfaitement */
-    font-size: 3vw; /* Taille du texte */
-    font-weight: bold;
+    position: absolute; /* Positionne le texte par rapport au parent */
+    top: 65%; /* Place le texte à 65% de la hauteur de l'élément parent */
+    left: 30%; /* Décalage horizontal depuis la gauche */
+    transform: translate(-50%, -50%); /* Centre parfaitement le texte */
+    font-size: 3vw; /* Taille du texte proportionnelle à la largeur de l'écran */
+    font-weight: bold; /* Gras pour le texte */
     color: white; /* Couleur du texte */
     text-shadow: 
       -2px -2px 0 #000, 
       2px -2px 0 #000, 
       -2px 2px 0 #000, 
-      2px 2px 0 #000; /* Contour noir */
-}  
+      2px 2px 0 #000; /* Contour noir pour améliorer la lisibilité */
+}
 
+/* Section de texte pour "En savoir plus" */
 .textEnSavoirPlus {
-    position: absolute;
+    position: absolute; /* Positionnement personnalisé */
     color: white; /* Couleur du texte */
     text-shadow: 
       -1px -1px 0 #000, 
       1px -1px 0 #000, 
       -1px 1px 0 #000, 
-      1px 1px 0 #000; /* Contour noir */
-    line-height: 0.5; /* Réduire l'espacement entre les lignes */
+      1px 1px 0 #000; /* Contour noir pour la lisibilité */
+    line-height: 0.5; /* Réduit l'espacement entre les lignes */
 }
 
+/* Titre de la section "En savoir plus" */
 .textEnSavoirPlus h4 {
-    font-weight: bold;
-    font-size: 1.2vw; /* Taille du texte pour le titre */
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.2vw; /* Taille adaptée à la largeur de l'écran */
 }
 
+/* Paragraphes de la section "En savoir plus" */
 .textEnSavoirPlus p {
     font-size: 1.2vw; /* Taille du texte pour les paragraphes */
 }
- 
+
+/* Dernière ligne de texte spécifique */
 .derniertextetextEnSavoirPlus {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; /* Espace supplémentaire en bas */
 }
 
+/* Bouton "En savoir plus" */
 .BoutonEnSavoirPlus {
-    padding: 0.6vw 1.2vw;
-    background-color: #f01c24;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
+    padding: 0.6vw 1.2vw; /* Ajoute un espace interne proportionnel */
+    background-color: #f01c24; /* Rouge vif pour attirer l'attention */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime les bordures par défaut */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    text-decoration: none; /* Supprime le soulignement */
+    outline: none; /* Supprime le contour au focus */
 }
 
+
+/* --------------- Fin Slider 1 ---------------*/
+
+/* --------------- début Boxe ---------------*/
+
+/* Conteneur principal */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 2rem;
-    padding: 0 2em;
+    max-width: 1000px; /* Définit une largeur maximale de 1000px pour le conteneur */
+    margin: auto; /* Centre horizontalement le conteneur */
+    margin-top: 2rem; /* Ajoute un espace vertical au-dessus du conteneur */
+    padding: 0 2em; /* Ajoute un espace intérieur horizontal de 2em */
 }
 
+/* Grille principale */
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
+    display: grid; /* Active un système de grille */
+    grid-template-columns: 1fr; /* Une seule colonne par défaut */
+    gap: 1em; /* Espace entre les éléments de la grille */
 }
 
+/* Carte principale (éléments individuels dans la grille) */
 .cardPA {
-    background-color: transparent;
-    border: 4px solid white;
-    padding: 1em;
-    border-radius: 15px;
-    text-align: center;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease; /* Ajout d'une transition fluide */
-    text-decoration: none;
-    outline: none;
+    background-color: transparent; /* Fond transparent par défaut */
+    border: 4px solid white; /* Bordure blanche de 4px */
+    padding: 1em; /* Ajoute un espace intérieur de 1em */
+    border-radius: 15px; /* Coins arrondis pour un style doux */
+    text-align: center; /* Centre le contenu en texte horizontalement */
+    width: 120px; /* Largeur fixe de 120px */
+    height: 120px; /* Hauteur fixe de 120px */
+    margin: 0 auto; /* Centre chaque carte dans son conteneur */
+    display: flex; /* Utilise Flexbox pour l'alignement du contenu interne */
+    flex-direction: column; /* Place le contenu (icône, texte) verticalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    transition: all 0.3s ease; /* Ajoute une transition fluide pour les changements de styles */
+    text-decoration: none; /* Supprime les soulignements pour les liens */
+    outline: none; /* Supprime les contours visibles au focus */
 }
 
+/* Texte à l'intérieur des cartes */
 .cardPA p {
-    color: white;
-    font-size: 0.9em;
-    font-weight: bold;
-    margin-bottom: 0;
+    color: white; /* Texte en blanc par défaut */
+    font-size: 0.9em; /* Taille de la police légèrement réduite */
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 0; /* Supprime l'espace inférieur */
 }
 
+/* Icônes dans les cartes */
 .cardPA i {
-    color: white;
+    color: white; /* Icônes blanches par défaut */
 }
 
-/* Médias-queries pour les écrans plus larges */
+/* Médias-queries : styles pour les écrans plus larges */
 @media (min-width: 768px) {
     .grid {
-        grid-template-columns: repeat(5, 1fr);
-        justify-items: center;
-        gap: 0.5em;
+        grid-template-columns: repeat(5, 1fr); /* Définit une grille à 5 colonnes */
+        justify-items: center; /* Centre chaque élément dans sa cellule */
+        gap: 0.5em; /* Réduit l'espace entre les éléments */
     }
 
+    /* Positionnement spécifique pour certains textes */
     .textEnSavoirPlus {
-        position: absolute;
-        top: 58%; 
-        left: 58%;
+        position: absolute; /* Positionnement personnalisé */
+        top: 58%; /* Décalage vertical */
+        left: 58%; /* Décalage horizontal */
     }
 }
 
-/* Effets au survol */
+/* Effets au survol des cartes */
 .cardPA:hover {
-    background-color: white;       /* Couleur de fond blanche */
-    color: black;                  /* Texte en noir */
-    transform: translateY(-15px);  /* Translation vers le haut */
+    background-color: white; /* Fond de la carte passe au blanc */
+    color: black; /* Texte de la carte passe au noir */
+    transform: translateY(-15px); /* La carte se déplace légèrement vers le haut */
 }
 
+/* Texte au survol des cartes */
 .cardPA:hover p {
-    color: black;                  /* Texte en noir */
+    color: black; /* Le texte passe en noir */
 }
 
+/* Icônes au survol des cartes */
 .cardPA:hover i {
-    color: red;                    /* Icône en rouge */
+    color: #f01c24; /* L'icône devient rouge */
 }
 
-/***** SECTION ACTUS & BONS PLANS *****/
+
+/* --------------- Fin Boxe ---------------*/
+
+/* --------------- Debut Bon Plans ---------------*/
+
+/* Section principale pour les actualités et bons plans */
 .actus-bons-plans {
-    color: white;
-    padding: 2em 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    color: white; /* Texte en blanc */
+    padding: 2em 1em; /* Espacement intérieur : 2em en haut/bas, 1em gauche/droite */
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Les enfants sont empilés verticalement */
+    gap: 1em; /* Espacement entre les éléments */
 }
 
+/* En-tête des actualités */
 .actus-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espacement maximum entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
 }
 
+/* Titre principal de l'en-tête */
 .actus-header h2 {
-    margin: 0;
-    font-size: 3rem; /* Augmente la taille globale du texte */
-    line-height: 1.2;
-    text-align: left;
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 3rem; /* Taille importante du texte pour le titre principal */
+    line-height: 1.2; /* Hauteur de ligne légèrement augmentée */
+    text-align: left; /* Texte aligné à gauche */
 }
 
+/* Sous-titre stylisé pour "bons plans" */
 .actus-header h2 span {
-    font-weight: normal;
-    display: block; /* Place "bons plans" sur une nouvelle ligne */
-    font-size: 2.5rem; /* Taille légèrement réduite pour "bons plans" */
-    margin-top: -0.1em; /* Ajoute un petit espace entre les lignes */
-    color: #f01c24; /* Rouge pour "bons plans" */
+    font-weight: normal; /* Texte non gras */
+    display: block; /* Place le texte sur une nouvelle ligne */
+    font-size: 2.5rem; /* Taille légèrement plus petite */
+    margin-top: -0.1em; /* Ajuste l'espace entre les lignes */
+    color: #f01c24; /* Couleur rouge pour mettre en valeur */
     text-shadow: 
         -1px -1px 0 #fff, 
         1px -1px 0 #fff, 
         -1px 1px 0 #fff, 
-        1px 1px 0 #fff; /* Contour blanc */
+        1px 1px 0 #fff; /* Contour blanc autour du texte */
 }
 
-
+/* Texte mis en valeur avec "strong" */
 .actus-header h2 strong {
-    font-weight: bold;
-    color: #f01c24; /* Rouge pour le texte */
+    font-weight: bold; /* Texte en gras */
+    color: #f01c24; /* Texte rouge */
     text-shadow: 
-        -1px -1px 0 #fff, /* Contour blanc en haut à gauche */
-        1px -1px 0 #fff,  /* Contour blanc en haut à droite */
-        -1px 1px 0 #fff,  /* Contour blanc en bas à gauche */
-        1px 1px 0 #fff;   /* Contour blanc en bas à droite */
+        -1px -1px 0 #fff, 
+        1px -1px 0 #fff, 
+        -1px 1px 0 #fff, 
+        1px 1px 0 #fff; /* Contour blanc autour du texte */
 }
 
+/* Bouton dans l'en-tête */
 .actus-header .btn {
-    background-color: white;
-    color: #f01c24;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    border: 2px solid white; /* Ajout d'une bordure */
+    background-color: white; /* Fond blanc */
+    color: #f01c24; /* Texte rouge */
+    padding: 0.5em 1em; /* Espacement interne */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    position: relative; /* Nécessaire pour le pseudo-élément */
+    display: inline-block; /* Rend le bouton inline avec des dimensions */
+    border: 2px solid white; /* Bordure blanche */
     border-radius: 15px; /* Coins arrondis */
 }
 
-
+/* Style pour un pseudo-élément en arrière-plan */
 .actus-header .btn::before {
-    content: '';
-    position: absolute;
+    content: ''; /* Crée un pseudo-élément vide */
+    position: absolute; /* Position absolue dans le bouton */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     border-radius: 15px; /* Coins arrondis */
-    background-color: white;
-    z-index: -1; /* Place derrière le texte */
+    background-color: white; /* Fond blanc */
+    z-index: -1; /* Place derrière le contenu principal */
 }
 
+/* Effet au survol du bouton */
 .actus-header .btn:hover::before {
-    background-color: #f7f7f7; /* Effet survol */
+    background-color: #f7f7f7; /* Change la couleur de fond sur hover */
 }
 
+/* Section carousel */
 .carouselaccueil2 {
-    position: relative;
-    display: flex;                  /* Organise les cartes en ligne */
-    justify-content: flex-start;    /* Les cartes collent à gauche */
-    align-items: center;            /* Alignement vertical */
-    gap: 25px;                      /* Espacement entre les cartes */
-    padding: 2rem;                  /* Espacement intérieur */
-    overflow-x: auto;               /* Défilement horizontal activé */
-    width: 100%;                    /* La largeur visible est limitée à la page */
-    box-sizing: border-box;         /* Inclut les bordures et padding dans la largeur */
-    user-select: none;              /* Empêche la sélection de texte */
-}
-  
-.carouselaccueil2::-webkit-scrollbar {    /* Barre de défilement */
-    display: none;                  /* Cacher la barre de défilement */
+    position: relative; /* Nécessaire pour le positionnement des éléments enfants */
+    display: flex; /* Flexbox pour organiser les cartes en ligne */
+    justify-content: flex-start; /* Les cartes commencent à gauche */
+    align-items: center; /* Alignement vertical des cartes */
+    gap: 25px; /* Espace entre les cartes */
+    padding: 2rem; /* Espacement intérieur */
+    overflow-x: auto; /* Active le défilement horizontal */
+    width: 100%; /* La largeur s'adapte à celle de la page */
+    box-sizing: border-box; /* Inclut bordure et padding dans la largeur */
+    user-select: none; /* Empêche la sélection de texte */
 }
 
+/* Suppression de la barre de défilement sur Webkit (Chrome, Safari) */
+.carouselaccueil2::-webkit-scrollbar {
+    display: none; /* Masque la barre de défilement */
+}
+
+/* Cartes dans le carousel */
 .cardcarousel2 {
-    position: relative;
-    flex: 0 0 auto;                 /* Empêche les cartes de rétrécir */
-    width: 450px;                   /* Largeur fixe pour chaque carte */
-    height: 570px;                  /* Hauteur fixe pour chaque carte */
-    border-radius: 1rem;            /* Ajout de coins arrondis */
+    position: relative; /* Nécessaire pour positionner les enfants */
+    flex: 0 0 auto; /* Empêche les cartes de rétrécir ou de s'étendre */
+    width: 450px; /* Largeur fixe */
+    height: 570px; /* Hauteur fixe */
+    border-radius: 1rem; /* Coins arrondis */
 }
 
+/* Images dans les cartes */
 .cardcarousel2Image {
     position: relative;
-    width: 100%;              /* L'image remplit la largeur du conteneur */
-    height: 100%;             /* L'image remplit la hauteur du conteneur */
-    object-fit:cover;        /* L'image remplit le conteneur en conservant ses proportions */
-    border-radius: 1rem;        /* Ajout de coins arrondis */
-    -webkit-user-drag: none;
+    width: 100%; /* L'image remplit la largeur de la carte */
+    height: 100%; /* L'image remplit la hauteur de la carte */
+    object-fit: cover; /* L'image conserve ses proportions tout en remplissant la carte */
+    border-radius: 1rem; /* Coins arrondis identiques à la carte */
+    -webkit-user-drag: none; /* Désactive le glisser-déposer sur l'image */
 }
 
+/* Date dans les cartes */
 .cardcarousel2Date {
     position: relative;
-    font-size: 1rem;
-    margin: 0;
-    font-weight: bold;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;    /* Police */
-
+    font-size: 1rem; /* Taille standard du texte */
+    margin: 0; /* Supprime les marges par défaut */
+    font-weight: bold; /* Texte en gras */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Police */
 }
 
+/* Titre des cartes */
 .cardcarousel2Titre {
     position: relative;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0.5rem 0;
-    min-height: 6rem;
-    max-width: 90%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 30px; /* Texte plus grand pour le titre */
+    font-weight: bold; /* Texte en gras */
+    margin: 0.5rem 0; /* Espacement au-dessus et en dessous */
+    min-height: 6rem; /* Hauteur minimale pour un affichage uniforme */
+    max-width: 90%; /* Limite la largeur */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Police */
 }
 
+/* Hashtags dans les cartes */
 .cardcarousel2Hashtag {
     position: relative;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0;
+    font-weight: bold; /* Texte en gras */
+    font-size: 1rem; /* Taille standard */
+    margin: 0; /* Supprime les marges par défaut */
 }
 
-
+/* Superposition dans les cartes */
 .cardcarousel2Overlay {
-    position: absolute;
-    bottom:  0rem;
-    left: 0rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    color: black;
-    padding: 20px;
+    position: absolute; /* Superposé sur l'image */
+    bottom: 0rem; /* Aligne au bas de la carte */
+    left: 0rem; /* Aligne à gauche */
+    width: 100%; /* S'étend sur toute la largeur */
+    display: flex; /* Flexbox pour l'organisation verticale */
+    flex-direction: column; /* Empile les éléments verticalement */
+    justify-content: end; /* Aligne les éléments en bas */
+    color: black; /* Couleur du texte */
+    padding: 20px; /* Espacement interne */
 }
+
+/* --------------- Fin Bon Plans ---------------*/
