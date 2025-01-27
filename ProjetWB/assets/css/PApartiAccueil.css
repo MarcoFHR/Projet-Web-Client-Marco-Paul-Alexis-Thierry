@@ -125,7 +125,7 @@
     gap: 1em;
 }
 
-.card {
+.cardPA {
     background-color: transparent;
     border: 4px solid white;
     padding: 1em;
@@ -143,14 +143,14 @@
     outline: none;
 }
 
-.card p {
+.cardPA p {
     color: white;
     font-size: 0.9em;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.card i {
+.cardPA i {
     color: white;
 }
 
@@ -170,17 +170,17 @@
 }
 
 /* Effets au survol */
-.card:hover {
+.cardPA:hover {
     background-color: white;       /* Couleur de fond blanche */
     color: black;                  /* Texte en noir */
     transform: translateY(-15px);  /* Translation vers le haut */
 }
 
-.card:hover p {
+.cardPA:hover p {
     color: black;                  /* Texte en noir */
 }
 
-.card:hover i {
+.cardPA:hover i {
     color: red;                    /* Icône en rouge */
 }
 
